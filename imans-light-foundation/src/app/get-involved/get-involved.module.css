@@ -1,0 +1,83 @@
+.waysGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.wayCard {
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wayCardPrimary {
+  background: var(--navy);
+  border: 1px solid rgba(201,168,76,0.3);
+}
+
+.wayCardPrimary .wayTitle {
+  color: var(--white);
+}
+
+.wayCardPrimary .wayDesc {
+  color: rgba(255,255,255,0.65);
+}
+
+.wayIcon {
+  font-size: 2.4rem;
+}
+
+.wayTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.wayDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.testimonialCard {
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quoteIcon {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--gold);
+  line-height: 0.8;
+  opacity: 0.7;
+}
+
+.quoteText {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.75;
+  flex-grow: 1;
+}
+
+.quoteName {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .waysGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .waysGrid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,119 @@
+.storyVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storyImg {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  height: auto;
+}
+
+.missionGrid {
+  margin-top: 48px;
+  align-items: stretch;
+}
+
+.missionCard {
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.missionIcon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.valueCard {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.valueIcon {
+  font-size: 2rem;
+}
+
+.valueTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.valueText {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+
+.teamCard {
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.teamAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C9A84C, #E8C97A);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-gold);
+}
+
+.teamName {
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.teamBio {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+.partnerLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.partnerLogo {
+  padding: 20px 36px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.partnerLogo:hover {
+  border-color: var(--gold);
+  color: var(--gold-dark);
+  box-shadow: var(--shadow-gold);
+}
+
+@media (max-width: 768px) {
+  .missionGrid { grid-template-columns: 1fr; }
+}
