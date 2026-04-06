@@ -55,7 +55,6 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const { lang, setLang } = useContext(LanguageContext);
 
   useEffect(() => {
@@ -120,17 +119,15 @@ export default function Navbar() {
               <li
                 key={link.href}
                 className={styles.navItem}
-                onMouseEnter={() => link.dropdown && setActiveDropdown(link.href)}
-                onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link href={link.href} className={styles.navLink}>
                   {lang === 'en' ? link.labelEn : link.labelEs}
                   {link.dropdown && <span className={styles.chevron}>▾</span>}
                 </Link>
                 {link.dropdown && (
-                  <div className={`${styles.dropdown} ${activeDropdown === link.href ? styles.dropdownOpen : ''}`}>
+                  <div className={styles.dropdown}>
                     {link.dropdown.map((item) => (
-                      <Link key={item.href} href={item.href} className={styles.dropdownItem} onClick={() => setActiveDropdown(null)}>
+                      <Link key={item.href} href={item.href} className={styles.dropdownItem}>
                         {lang === 'en' ? item.labelEn : item.labelEs}
                       </Link>
                     ))}
@@ -143,7 +140,7 @@ export default function Navbar() {
           {/* Right side Donate CTA */}
           <div className={styles.controls}>
             <Link href="/donate" className={`btn btn-primary ${styles.donateBtn}`}>
-              {lang === 'en' ? 'Give Now' : 'Donar Ahora'}
+              {lang === 'en' ? 'Donate' : 'Donar Ahora'}
             </Link>
 
             {/* Mobile Hamburger */}
@@ -195,7 +192,7 @@ export default function Navbar() {
               <button className={lang === 'es' ? styles.activeLang : ''} onClick={() => setLang('es')}>Español</button>
             </div>
             <Link href="/donate" className="btn btn-primary" onClick={() => setMobileOpen(false)}>
-              {lang === 'en' ? 'Give Now' : 'Donar Ahora'}
+              {lang === 'en' ? 'Donate' : 'Donar Ahora'}
             </Link>
           </div>
         </div>

@@ -14,7 +14,7 @@ const t = {
     heroSubtitle:
       "Iman's Light Foundation educates communities on the perils of Fentanyl, advocates for legislative change, and provides mental health support to those affected by addiction.",
     heroCta1: 'Our Mission',
-    heroCta2: 'Give Now',
+    heroCta2: 'Donate',
     impactLabel: 'Our Impact',
     impactTitle: 'Every Life Matters',
     impactSub: 'Through education, advocacy, and community programs, we are changing lives across South Florida.',
