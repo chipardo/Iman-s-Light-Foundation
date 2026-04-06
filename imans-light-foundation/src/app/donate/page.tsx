@@ -2,24 +2,25 @@
 import { useContext } from 'react';
 import Link from 'next/link';
 import { LanguageContext } from '@/context/LanguageContext';
+import { Leaf, Heart, Star, Sparkles, Gem, Trophy, Mail, RefreshCcw, Building2 } from 'lucide-react';
 import styles from './donate.module.css';
 
 const tiers = {
   en: [
-    { amount: '$25', label: 'Friend', descEn: 'Provides educational materials for one student workshop.', icon: '🌱' },
-    { amount: '$50', label: 'Supporter', descEn: 'Funds a mental health wellness resource kit for a family.', icon: '💛' },
-    { amount: '$100', label: 'Champion', descEn: 'Sponsors one family for a complete workshop series.', icon: '⭐' },
-    { amount: '$250', label: 'Advocate', descEn: 'Helps host a community fentanyl awareness event.', icon: '🌟', featured: true },
-    { amount: '$500', label: 'Guardian', descEn: 'Funds an entire school prevention workshop for 30+ students.', icon: '💎' },
-    { amount: 'Custom', label: 'Legacy', descEn: 'Your custom gift makes a lasting difference at any level.', icon: '🏆' },
+    { amount: '$25', label: 'Friend', descEn: 'Provides educational materials for one student workshop.', icon: <Leaf size={32} /> },
+    { amount: '$50', label: 'Supporter', descEn: 'Funds a mental health wellness resource kit for a family.', icon: <Heart size={32} /> },
+    { amount: '$100', label: 'Champion', descEn: 'Sponsors one family for a complete workshop series.', icon: <Star size={32} /> },
+    { amount: '$250', label: 'Advocate', descEn: 'Helps host a community fentanyl awareness event.', icon: <Sparkles size={32} />, featured: true },
+    { amount: '$500', label: 'Guardian', descEn: 'Funds an entire school prevention workshop for 30+ students.', icon: <Gem size={32} /> },
+    { amount: 'Custom', label: 'Legacy', descEn: 'Your custom gift makes a lasting difference at any level.', icon: <Trophy size={32} /> },
   ],
   es: [
-    { amount: '$25', label: 'Amigo', descEn: 'Proporciona materiales educativos para un taller estudiantil.', icon: '🌱' },
-    { amount: '$50', label: 'Simpatizante', descEn: 'Financia un kit de recursos de bienestar de salud mental para una familia.', icon: '💛' },
-    { amount: '$100', label: 'Campeón', descEn: 'Patrocina a una familia para una serie completa de talleres.', icon: '⭐' },
-    { amount: '$250', label: 'Defensor', descEn: 'Ayuda a organizar un evento comunitario de concientización sobre el Fentanilo.', icon: '🌟', featured: true },
-    { amount: '$500', label: 'Guardián', descEn: 'Financia un taller completo de prevención escolar para más de 30 estudiantes.', icon: '💎' },
-    { amount: 'Personalizado', label: 'Legado', descEn: 'Tu donación personalizada marca una diferencia duradera.', icon: '🏆' },
+    { amount: '$25', label: 'Amigo', descEn: 'Proporciona materiales educativos para un taller estudiantil.', icon: <Leaf size={32} /> },
+    { amount: '$50', label: 'Simpatizante', descEn: 'Financia un kit de recursos de bienestar de salud mental para una familia.', icon: <Heart size={32} /> },
+    { amount: '$100', label: 'Campeón', descEn: 'Patrocina a una familia para una serie completa de talleres.', icon: <Star size={32} /> },
+    { amount: '$250', label: 'Defensor', descEn: 'Ayuda a organizar un evento comunitario de concientización sobre el Fentanilo.', icon: <Sparkles size={32} />, featured: true },
+    { amount: '$500', label: 'Guardián', descEn: 'Financia un taller completo de prevención escolar para más de 30 estudiantes.', icon: <Gem size={32} /> },
+    { amount: 'Personalizado', label: 'Legado', descEn: 'Tu donación personalizada marca una diferencia duradera.', icon: <Trophy size={32} /> },
   ],
 };
 
@@ -117,21 +118,21 @@ export default function DonatePage() {
           <div className="grid-3" style={{ marginTop: '48px' }}>
             {[
               {
-                icon: '📧',
+                icon: <Mail size={40} color="var(--gold)" />,
                 titleEn: 'Mail a Check',
                 titleEs: 'Enviar un Cheque',
                 descEn: 'Make checks payable to "Iman\'s Light Foundation" and mail to our foundation address.',
                 descEs: 'Haz los cheques a nombre de "Iman\'s Light Foundation" y envíalos a nuestra dirección.',
               },
               {
-                icon: '🔄',
+                icon: <RefreshCcw size={40} color="var(--gold)" />,
                 titleEn: 'Recurring Giving',
                 titleEs: 'Donaciones Recurrentes',
                 descEn: 'Set up monthly donations to provide sustained support for our programs year-round.',
                 descEs: 'Configura donaciones mensuales para proporcionar apoyo sostenido a nuestros programas.',
               },
               {
-                icon: '🏢',
+                icon: <Building2 size={40} color="var(--gold)" />,
                 titleEn: 'Corporate Sponsorship',
                 titleEs: 'Patrocinio Corporativo',
                 descEn: 'Partner with us as a corporate sponsor. Contact us for sponsorship packages and benefits.',
@@ -139,7 +140,7 @@ export default function DonatePage() {
               },
             ].map((way, i) => (
               <div key={i} className="card" style={{ padding: '36px 28px' }}>
-                <div style={{ fontSize: '2.4rem', marginBottom: '16px' }}>{way.icon}</div>
+                <div style={{ marginBottom: '24px', display: 'flex', justifyContent: 'center' }}>{way.icon}</div>
                 <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>{isEs ? way.titleEs : way.titleEn}</h3>
                 <div className="gold-divider" />
                 <p style={{ fontSize: '0.9rem' }}>{isEs ? way.descEs : way.descEn}</p>

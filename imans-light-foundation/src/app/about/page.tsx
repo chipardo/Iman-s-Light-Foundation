@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LanguageContext } from '@/context/LanguageContext';
+import { Lightbulb, Heart, Scale, Leaf, Users, Star, Globe2 } from 'lucide-react';
 import styles from './about.module.css';
 
 const t = {
@@ -25,12 +26,12 @@ const t = {
     valuesLabel: 'Core Values',
     valuesTitle: 'What Guides Us',
     values: [
-      { icon: '💡', title: 'Education First', text: 'Knowledge is the most powerful weapon against addiction. We arm communities with facts.' },
-      { icon: '❤️', title: 'Compassion', text: 'Every person affected by addiction deserves empathy, support, and a path forward.' },
-      { icon: '⚖️', title: 'Justice', text: 'We advocate fiercely for legislative change and accountability for those who profit from addiction.' },
-      { icon: '🌱', title: 'Healing', text: 'We provide resources and support for victims and families on their journey to healing.' },
-      { icon: '🤝', title: 'Community', text: 'Together we are stronger. We build bridges across organizations, agencies, and communities.' },
-      { icon: '🌟', title: 'Hope', text: "Even in the darkest moments, Iman's Light shines — a beacon of hope for a better tomorrow." },
+      { icon: <Lightbulb size={32} />, title: 'Education First', text: 'Knowledge is the most powerful weapon against addiction. We arm communities with facts.' },
+      { icon: <Heart size={32} />, title: 'Compassion', text: 'Every person affected by addiction deserves empathy, support, and a path forward.' },
+      { icon: <Scale size={32} />, title: 'Justice', text: 'We advocate fiercely for legislative change and accountability for those who profit from addiction.' },
+      { icon: <Leaf size={32} />, title: 'Healing', text: 'We provide resources and support for victims and families on their journey to healing.' },
+      { icon: <Users size={32} />, title: 'Community', text: 'Together we are stronger. We build bridges across organizations, agencies, and communities.' },
+      { icon: <Star size={32} />, title: 'Hope', text: "Even in the darkest moments, Iman's Light shines — a beacon of hope for a better tomorrow." },
     ],
     teamLabel: 'Our People',
     teamTitle: 'The Team Behind the Mission',
@@ -67,12 +68,12 @@ const t = {
     valuesLabel: 'Valores Fundamentales',
     valuesTitle: 'Lo Que Nos Guía',
     values: [
-      { icon: '💡', title: 'Educación Primero', text: 'El conocimiento es el arma más poderosa contra la adicción. Armamos comunidades con hechos.' },
-      { icon: '❤️', title: 'Compasión', text: 'Cada persona afectada por la adicción merece empatía, apoyo y un camino hacia adelante.' },
-      { icon: '⚖️', title: 'Justicia', text: 'Abogamos ferozmente por cambios legislativos y responsabilidad para quienes se benefician de la adicción.' },
-      { icon: '🌱', title: 'Sanación', text: 'Proporcionamos recursos y apoyo para víctimas y familias en su camino hacia la sanación.' },
-      { icon: '🤝', title: 'Comunidad', text: 'Juntos somos más fuertes. Construimos puentes entre organizaciones, agencias y comunidades.' },
-      { icon: '🌟', title: 'Esperanza', text: 'Incluso en los momentos más oscuros, la luz de Iman brilla — un faro de esperanza para un mañana mejor.' },
+      { icon: <Lightbulb size={32} />, title: 'Educación Primero', text: 'El conocimiento es el arma más poderosa contra la adicción. Armamos comunidades con hechos.' },
+      { icon: <Heart size={32} />, title: 'Compasión', text: 'Cada persona afectada por la adicción merece empatía, apoyo y un camino hacia adelante.' },
+      { icon: <Scale size={32} />, title: 'Justicia', text: 'Abogamos ferozmente por cambios legislativos y responsabilidad para quienes se benefician de la adicción.' },
+      { icon: <Leaf size={32} />, title: 'Sanación', text: 'Proporcionamos recursos y apoyo para víctimas y familias en su camino hacia la sanación.' },
+      { icon: <Users size={32} />, title: 'Comunidad', text: 'Juntos somos más fuertes. Construimos puentes entre organizaciones, agencias y comunidades.' },
+      { icon: <Star size={32} />, title: 'Esperanza', text: 'Incluso en los momentos más oscuros, la luz de Iman brilla — un faro de esperanza para un mañana mejor.' },
     ],
     teamLabel: 'Nuestro Equipo',
     teamTitle: 'El Equipo Detrás de la Misión',
@@ -127,7 +128,7 @@ export default function AboutPage() {
             </div>
             <div className={styles.storyVisual}>
               <Image
-                src="/logo.jpg"
+                src="https://static.wixstatic.com/media/56e6ee_ece131f2ea484a41881b640ba6c9430a~mv2.jpg"
                 alt="Iman's Light Foundation"
                 width={500}
                 height={500}
@@ -146,13 +147,13 @@ export default function AboutPage() {
           </div>
           <div className={`grid-2 ${styles.missionGrid}`}>
             <div className={`card ${styles.missionCard}`}>
-              <div className={styles.missionIcon}>🌟</div>
+              <div className={styles.missionIcon}><Star size={48} color="var(--gold)" /></div>
               <h2>{txt.missionTitle}</h2>
               <div className="gold-divider" />
               <p>{txt.missionText}</p>
             </div>
             <div className={`card ${styles.missionCard}`}>
-              <div className={styles.missionIcon}>🌍</div>
+              <div className={styles.missionIcon}><Globe2 size={48} color="var(--blue-500)" /></div>
               <h2>{txt.visionTitle}</h2>
               <div className="gold-divider" />
               <p>{txt.visionText}</p>

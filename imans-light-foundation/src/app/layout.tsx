@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/context/LanguageContext';
+import NebulaBackground from '@/components/NebulaBackground';
 
 export const metadata: Metadata = {
   title: {
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <LanguageProvider>
+          <NebulaBackground />
           <Navbar />
           <main>{children}</main>
           <Footer />

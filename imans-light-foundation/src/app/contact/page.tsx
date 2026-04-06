@@ -2,6 +2,7 @@
 import { useContext, useState } from 'react';
 import Link from 'next/link';
 import { LanguageContext } from '@/context/LanguageContext';
+import { CheckCircle2, Phone, Mail, MapPin, Clipboard, Siren } from 'lucide-react';
 import styles from './contact.module.css';
 
 export default function ContactPage() {
@@ -40,7 +41,7 @@ export default function ContactPage() {
 
               {submitted ? (
                 <div className={styles.successMsg}>
-                  <div className={styles.successIcon}>✓</div>
+                  <div className={styles.successIcon}><CheckCircle2 size={48} /></div>
                   <h3>{isEs ? '¡Mensaje Enviado!' : 'Message Sent!'}</h3>
                   <p>{isEs ? 'Gracias por contactarnos. Te responderemos en 1-2 días hábiles.' : "Thank you for reaching out. We'll respond within 1-2 business days."}</p>
                   <button className="btn btn-dark" onClick={() => setSubmitted(false)} style={{ marginTop: '16px' }}>
@@ -93,28 +94,28 @@ export default function ContactPage() {
               <div className="gold-divider" />
               <div className={styles.contactCards}>
                 <div className={styles.contactCard}>
-                  <div className={styles.contactCardIcon}>📞</div>
+                  <div className={styles.contactCardIcon}><Phone /></div>
                   <div>
                     <div className={styles.contactCardLabel}>{isEs ? 'Teléfono' : 'Phone'}</div>
                     <a href="tel:+17868533347" className={styles.contactCardValue}>+1 (786) 853-3347</a>
                   </div>
                 </div>
                 <div className={styles.contactCard}>
-                  <div className={styles.contactCardIcon}>📧</div>
+                  <div className={styles.contactCardIcon}><Mail /></div>
                   <div>
                     <div className={styles.contactCardLabel}>{isEs ? 'Correo' : 'Email'}</div>
                     <a href="mailto:imanslightfoundation@gmail.com" className={styles.contactCardValue}>imanslightfoundation@gmail.com</a>
                   </div>
                 </div>
                 <div className={styles.contactCard}>
-                  <div className={styles.contactCardIcon}>📍</div>
+                  <div className={styles.contactCardIcon}><MapPin /></div>
                   <div>
                     <div className={styles.contactCardLabel}>{isEs ? 'Área de Servicio' : 'Service Area'}</div>
                     <div className={styles.contactCardValue}>South Florida</div>
                   </div>
                 </div>
                 <div className={styles.contactCard}>
-                  <div className={styles.contactCardIcon}>📋</div>
+                  <div className={styles.contactCardIcon}><Clipboard /></div>
                   <div>
                     <div className={styles.contactCardLabel}>EIN</div>
                     <div className={styles.contactCardValue}>93-4410846</div>
@@ -126,16 +127,16 @@ export default function ContactPage() {
                 <h4 className={styles.socialTitle}>{isEs ? 'Síguenos' : 'Follow Us'}</h4>
                 <div className={styles.socialLinks}>
                   <a href="https://www.instagram.com/imanslightfoundation" target="_blank" rel="noopener noreferrer" className={`btn btn-outline ${styles.socialLink}`}>
-                    📷 Instagram
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> Instagram
                   </a>
                   <a href="https://www.facebook.com/imanslightfoundation" target="_blank" rel="noopener noreferrer" className={`btn btn-outline ${styles.socialLink}`}>
-                    📘 Facebook
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook
                   </a>
                 </div>
               </div>
 
               <div className={styles.emergencyBox}>
-                <div className={styles.emergencyIcon}>🚨</div>
+                <div className={styles.emergencyIcon}><Siren size={32} /></div>
                 <div>
                   <h4 className={styles.emergencyTitle}>{isEs ? '¿En Crisis?' : 'In Crisis?'}</h4>
                   <p className={styles.emergencyText}>
@@ -143,7 +144,7 @@ export default function ContactPage() {
                       ? 'Si tú o alguien que conoces está en crisis por sobredosis o salud mental, llama al 988 (Línea de Crisis) o 911 inmediatamente.'
                       : 'If you or someone you know is in a drug or mental health crisis, call 988 (Crisis Lifeline) or 911 immediately.'}
                   </p>
-                  <a href="tel:988" className={styles.emergencyLink}>📞 {isEs ? 'Llamar al 988' : 'Call 988'}</a>
+                  <a href="tel:988" className={styles.emergencyLink}><Phone size={16} /> {isEs ? 'Llamar al 988' : 'Call 988'}</a>
                 </div>
               </div>
             </div>

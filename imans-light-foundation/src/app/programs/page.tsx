@@ -2,12 +2,13 @@
 import { useContext } from 'react';
 import Link from 'next/link';
 import { LanguageContext } from '@/context/LanguageContext';
+import { GraduationCap, Brain, HeartPulse, Handshake } from 'lucide-react';
 
 const programs = {
   en: [
     {
       id: 'education',
-      icon: '🎓',
+      icon: GraduationCap,
       tag: 'Prevention',
       title: 'Drug Education & Prevention',
       subtitle: 'Teaching communities to recognize and resist the deadliest drugs',
@@ -23,7 +24,7 @@ const programs = {
     },
     {
       id: 'mental-health',
-      icon: '🧠',
+      icon: Brain,
       tag: 'Wellness',
       title: 'Mental Health & Wellness Workshops',
       subtitle: 'Addressing the root causes that lead to substance use',
@@ -39,7 +40,7 @@ const programs = {
     },
     {
       id: 'saving-lives',
-      icon: '❤️',
+      icon: HeartPulse,
       tag: 'Advocacy',
       title: 'Saving Lives Initiative',
       subtitle: 'Direct action through advocacy, data, and community outreach',
@@ -55,7 +56,7 @@ const programs = {
     },
     {
       id: 'resources',
-      icon: '🤝',
+      icon: Handshake,
       tag: 'Support',
       title: 'Victim & Family Resources',
       subtitle: 'Comprehensive support for those who have lost a loved one',
@@ -73,7 +74,7 @@ const programs = {
   es: [
     {
       id: 'education',
-      icon: '🎓',
+      icon: GraduationCap,
       tag: 'Prevención',
       title: 'Educación sobre Drogas y Prevención',
       subtitle: 'Enseñando a las comunidades a reconocer y resistir las drogas más mortales',
@@ -89,7 +90,7 @@ const programs = {
     },
     {
       id: 'mental-health',
-      icon: '🧠',
+      icon: Brain,
       tag: 'Bienestar',
       title: 'Talleres de Salud Mental y Bienestar',
       subtitle: 'Abordando las causas raíz que llevan al consumo de sustancias',
@@ -105,7 +106,7 @@ const programs = {
     },
     {
       id: 'saving-lives',
-      icon: '❤️',
+      icon: HeartPulse,
       tag: 'Abogacía',
       title: 'Iniciativa Salvando Vidas',
       subtitle: 'Acción directa a través de abogacía, datos y alcance comunitario',
@@ -121,7 +122,7 @@ const programs = {
     },
     {
       id: 'resources',
-      icon: '🤝',
+      icon: Handshake,
       tag: 'Apoyo',
       title: 'Recursos para Víctimas y Familias',
       subtitle: 'Apoyo integral para quienes han perdido a un ser querido',
@@ -164,7 +165,7 @@ export default function ProgramsPage() {
             <div className="grid-2" style={{ gap: '64px' }}>
               <div style={{ order: i % 2 === 1 ? 2 : 1 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '2.5rem' }}>{prog.icon}</span>
+                  <span style={{ display: 'flex', color: 'var(--gold)' }}><prog.icon size={40} /></span>
                   <span className="tag">{prog.tag}</span>
                 </div>
                 <h2 className="section-title">{prog.title}</h2>
@@ -196,8 +197,9 @@ export default function ProgramsPage() {
                   fontSize: '8rem',
                   boxShadow: 'var(--shadow-lg)',
                   border: '1px solid rgba(201,168,76,0.2)',
+                  color: 'var(--gold)',
                 }}>
-                  {prog.icon}
+                  <prog.icon size={120} strokeWidth={1.5} />
                 </div>
               </div>
             </div>

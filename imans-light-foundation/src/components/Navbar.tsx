@@ -4,36 +4,52 @@ import { useState, useEffect, useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LanguageContext } from '@/context/LanguageContext';
+import { Phone, Mail } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 const navLinks = [
-  { href: '/', labelEn: 'Home', labelEs: 'Inicio' },
   {
     href: '/about',
-    labelEn: 'About',
-    labelEs: 'Acerca',
+    labelEn: 'About Us',
+    labelEs: 'Acerca de Nosotros',
     dropdown: [
-      { href: '/about', labelEn: "Iman's Story", labelEs: 'La Historia de Iman' },
-      { href: '/about#mission', labelEn: 'Our Mission', labelEs: 'Nuestra Misión' },
+      { href: '/about', labelEn: 'Our Story', labelEs: 'Nuestra Historia' },
+      { href: '/about#mission', labelEn: 'Mission & Vision', labelEs: 'Misión y Visión' },
       { href: '/about#team', labelEn: 'Our Team', labelEs: 'Nuestro Equipo' },
-      { href: '/about#partnerships', labelEn: 'Partnerships', labelEs: 'Alianzas' },
+      { href: '/about#partnerships', labelEn: 'Partners & Sponsors', labelEs: 'Socios y Patrocinadores' },
     ],
   },
   {
     href: '/programs',
-    labelEn: 'Programs',
-    labelEs: 'Programas',
+    labelEn: 'What We Do',
+    labelEs: 'Lo Que Hacemos',
     dropdown: [
-      { href: '/programs#education', labelEn: 'Drug Education', labelEs: 'Educación sobre Drogas' },
-      { href: '/programs#mental-health', labelEn: 'Mental Health', labelEs: 'Salud Mental' },
-      { href: '/programs#saving-lives', labelEn: 'Saving Lives', labelEs: 'Salvando Vidas' },
-      { href: '/programs#resources', labelEn: 'Community Resources', labelEs: 'Recursos Comunitarios' },
+      { href: '/programs', labelEn: 'Drug Education', labelEs: 'Educación sobre Drogas' },
+      { href: '/saving-lives', labelEn: 'Saving Lives', labelEs: 'Salvando Vidas' },
+      { href: '/data-metrics', labelEn: 'Data & Metrics', labelEs: 'Datos y Métricas' },
     ],
   },
-  { href: '/events', labelEn: 'Events', labelEs: 'Eventos' },
-  { href: '/gallery', labelEn: 'Gallery', labelEs: 'Galería' },
-  { href: '/get-involved', labelEn: 'Get Involved', labelEs: 'Participa' },
-  { href: '/contact', labelEn: 'Contact', labelEs: 'Contacto' },
+  {
+    href: '/events',
+    labelEn: 'Media & Events',
+    labelEs: 'Medios y Eventos',
+    dropdown: [
+      { href: '/events', labelEn: 'Upcoming Events', labelEs: 'Próximos Eventos' },
+      { href: '/events#past', labelEn: 'Past Events', labelEs: 'Eventos Pasados' },
+      { href: '/gallery', labelEn: 'Photo Gallery', labelEs: 'Galería de Fotos' },
+    ],
+  },
+  {
+    href: '/donate',
+    labelEn: 'Support & Giving',
+    labelEs: 'Apoyo y Donaciones',
+    dropdown: [
+      { href: '/donate', labelEn: 'Donate Online', labelEs: 'Donar en Línea' },
+      { href: '/get-involved', labelEn: 'Other Ways to Give', labelEs: 'Otras Formas de Dar' },
+      { href: '/get-involved#volunteer', labelEn: 'Volunteer', labelEs: 'Ser Voluntario' },
+      { href: '/contact', labelEn: 'Sponsor a Workshop', labelEs: 'Patrocinar un Taller' },
+    ],
+  },
 ];
 
 export default function Navbar() {
@@ -43,124 +59,147 @@ export default function Navbar() {
   const { lang, setLang } = useContext(LanguageContext);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60);
+    const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <div className={`container ${styles.inner}`}>
-        {/* Logo */}
-        <Link href="/" className={styles.logo} onClick={() => setMobileOpen(false)}>
-          <Image src="/logo.jpg" alt="Iman's Light Foundation" width={48} height={48} className={styles.logoImg} />
-          <span className={styles.logoText}>
-            <span className={styles.logoMain}>Iman's Light</span>
-            <span className={styles.logoSub}>Foundation</span>
-          </span>
-        </Link>
-
-        {/* Desktop Nav */}
-        <ul className={styles.desktopLinks}>
-          {navLinks.map((link) => (
-            <li
-              key={link.href}
-              className={styles.navItem}
-              onMouseEnter={() => link.dropdown && setActiveDropdown(link.href)}
-              onMouseLeave={() => setActiveDropdown(null)}
-            >
-              <Link href={link.href} className={styles.navLink}>
-                {lang === 'en' ? link.labelEn : link.labelEs}
-                {link.dropdown && <span className={styles.chevron}>▾</span>}
-              </Link>
-              {link.dropdown && (
-                <div className={`${styles.dropdown} ${activeDropdown === link.href ? styles.dropdownOpen : ''}`}>
-                  {link.dropdown.map((item) => (
-                    <Link key={item.href} href={item.href} className={styles.dropdownItem} onClick={() => setActiveDropdown(null)}>
-                      {lang === 'en' ? item.labelEn : item.labelEs}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        {/* Right side controls */}
-        <div className={styles.controls}>
-          {/* Language Toggle */}
-          <div className="lang-toggle">
-            <button
-              className={lang === 'en' ? 'active' : ''}
-              onClick={() => setLang('en')}
-              aria-label="Switch to English"
-            >
-              EN
-            </button>
-            <button
-              className={lang === 'es' ? 'active' : ''}
-              onClick={() => setLang('es')}
-              aria-label="Cambiar a Español"
-            >
-              ES
-            </button>
+    <>
+      {/* Top Utility Bar */}
+      <div className={`${styles.topBar} ${scrolled ? styles.topBarHidden : ''}`}>
+        <div className={`container ${styles.topBarInner}`}>
+          <div className={styles.topBarLeft}>
+            <span className={styles.crisisText}>
+              <Phone size={12} /> Need Help? Call 988 Suicide & Crisis Lifeline
+            </span>
           </div>
-
-          {/* Donate Button */}
-          <Link href="/donate" className={`btn btn-primary ${styles.donateBtn}`}>
-            {lang === 'en' ? 'Donate' : 'Donar'}
-          </Link>
-
-          {/* Mobile Hamburger */}
-          <button
-            className={`${styles.hamburger} ${mobileOpen ? styles.hamburgerOpen : ''}`}
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div className={`${styles.mobileMenu} ${mobileOpen ? styles.mobileMenuOpen : ''}`}>
-        <div className={styles.mobileInner}>
-          {navLinks.map((link) => (
-            <div key={link.href}>
-              <Link
-                href={link.href}
-                className={styles.mobileLink}
-                onClick={() => setMobileOpen(false)}
+          <div className={styles.topBarRight}>
+            <Link href="/contact" className={styles.topLink}>
+              <Mail size={12} /> {lang === 'en' ? 'Contact Us' : 'Contáctanos'}
+            </Link>
+            <div className={styles.topLangWrapper}>
+              <button
+                className={lang === 'en' ? styles.activeLangSmall : ''}
+                onClick={() => setLang('en')}
               >
-                {lang === 'en' ? link.labelEn : link.labelEs}
-              </Link>
-              {link.dropdown && (
-                <div className={styles.mobileDropdown}>
-                  {link.dropdown.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={styles.mobileSubLink}
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      {lang === 'en' ? item.labelEn : item.labelEs}
-                    </Link>
-                  ))}
-                </div>
-              )}
+                EN
+              </button>
+              <span className={styles.langDivider}>|</span>
+              <button
+                className={lang === 'es' ? styles.activeLangSmall : ''}
+                onClick={() => setLang('es')}
+              >
+                ES
+              </button>
             </div>
-          ))}
-          <div className={styles.mobileLang}>
-            <button className={lang === 'en' ? styles.activeLang : ''} onClick={() => setLang('en')}>English</button>
-            <button className={lang === 'es' ? styles.activeLang : ''} onClick={() => setLang('es')}>Español</button>
           </div>
-          <Link href="/donate" className="btn btn-primary" onClick={() => setMobileOpen(false)}>
-            {lang === 'en' ? 'Donate Now' : 'Donar Ahora'}
-          </Link>
         </div>
       </div>
-    </nav>
+
+      {/* Main Navigation */}
+      <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+        <div className={`container ${styles.inner}`}>
+          {/* Logo */}
+          <Link href="/" className={styles.logo} onClick={() => setMobileOpen(false)}>
+            <Image src="/logo.jpg" alt="Iman's Light Foundation" width={56} height={56} className={styles.logoImg} />
+            <span className={styles.logoText}>
+              <span className={styles.logoMain}>Iman's Light</span>
+              <span className={styles.logoSub}>Foundation</span>
+            </span>
+          </Link>
+
+          {/* Desktop Nav */}
+          <ul className={styles.desktopLinks}>
+            <li className={styles.navItem}>
+              <Link href="/" className={styles.navLink}>
+                {lang === 'en' ? 'Home' : 'Inicio'}
+              </Link>
+            </li>
+            {navLinks.map((link) => (
+              <li
+                key={link.href}
+                className={styles.navItem}
+                onMouseEnter={() => link.dropdown && setActiveDropdown(link.href)}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <Link href={link.href} className={styles.navLink}>
+                  {lang === 'en' ? link.labelEn : link.labelEs}
+                  {link.dropdown && <span className={styles.chevron}>▾</span>}
+                </Link>
+                {link.dropdown && (
+                  <div className={`${styles.dropdown} ${activeDropdown === link.href ? styles.dropdownOpen : ''}`}>
+                    {link.dropdown.map((item) => (
+                      <Link key={item.href} href={item.href} className={styles.dropdownItem} onClick={() => setActiveDropdown(null)}>
+                        {lang === 'en' ? item.labelEn : item.labelEs}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Right side Donate CTA */}
+          <div className={styles.controls}>
+            <Link href="/donate" className={`btn btn-primary ${styles.donateBtn}`}>
+              {lang === 'en' ? 'Give Now' : 'Donar Ahora'}
+            </Link>
+
+            {/* Mobile Hamburger */}
+            <button
+              className={`${styles.hamburger} ${mobileOpen ? styles.hamburgerOpen : ''}`}
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={`${styles.mobileMenu} ${mobileOpen ? styles.mobileMenuOpen : ''}`}>
+          <div className={styles.mobileInner}>
+            <Link href="/" className={styles.mobileLink} onClick={() => setMobileOpen(false)}>
+              {lang === 'en' ? 'Home' : 'Inicio'}
+            </Link>
+            {navLinks.map((link) => (
+              <div key={link.href}>
+                <Link
+                  href={link.href}
+                  className={styles.mobileLink}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {lang === 'en' ? link.labelEn : link.labelEs}
+                </Link>
+                {link.dropdown && (
+                  <div className={styles.mobileDropdown}>
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className={styles.mobileSubLink}
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {lang === 'en' ? item.labelEn : item.labelEs}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+            <div className={styles.mobileLang}>
+              <button className={lang === 'en' ? styles.activeLang : ''} onClick={() => setLang('en')}>English</button>
+              <button className={lang === 'es' ? styles.activeLang : ''} onClick={() => setLang('es')}>Español</button>
+            </div>
+            <Link href="/donate" className="btn btn-primary" onClick={() => setMobileOpen(false)}>
+              {lang === 'en' ? 'Give Now' : 'Donar Ahora'}
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }

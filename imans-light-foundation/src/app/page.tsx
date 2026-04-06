@@ -4,6 +4,7 @@ import { useContext, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LanguageContext } from '@/context/LanguageContext';
+import { BookOpen, Brain, Scale, GraduationCap, HeartPulse, ShieldPlus, Users } from 'lucide-react';
 import styles from './page.module.css';
 
 const t = {
@@ -157,7 +158,7 @@ export default function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/logo.jpg"
+            src="https://static.wixstatic.com/media/56e6ee_a50079ec691048d8bdb8696486b07456~mv2.jpg"
             alt="Iman's Light Foundation"
             fill
             priority
@@ -230,9 +231,9 @@ export default function HomePage() {
           </div>
           <div className="grid-3">
             {[
-              { icon: '📚', title: txt.pillar1Title, text: txt.pillar1Text },
-              { icon: '🧠', title: txt.pillar2Title, text: txt.pillar2Text },
-              { icon: '⚖️', title: txt.pillar3Title, text: txt.pillar3Text },
+              { icon: <BookOpen size={32} />, title: txt.pillar1Title, text: txt.pillar1Text },
+              { icon: <Brain size={32} />, title: txt.pillar2Title, text: txt.pillar2Text },
+              { icon: <Scale size={32} />, title: txt.pillar3Title, text: txt.pillar3Text },
             ].map((p, i) => (
               <div
                 key={i}
@@ -256,7 +257,7 @@ export default function HomePage() {
           <div className="grid-2">
             <div ref={addRef} className="fade-up">
               <Image
-                src="/logo.jpg"
+                src="https://static.wixstatic.com/media/56e6ee_1883900cfc974a68ba6cd750894bc110~mv2.jpg"
                 alt="Iman's Light Foundation Logo"
                 width={520}
                 height={520}
@@ -286,10 +287,10 @@ export default function HomePage() {
           </div>
           <div className="grid-4">
             {[
-              { icon: '🎓', title: txt.prog1, text: txt.prog1Text },
-              { icon: '💚', title: txt.prog2, text: txt.prog2Text },
-              { icon: '❤️', title: txt.prog3, text: txt.prog3Text },
-              { icon: '🤝', title: txt.prog4, text: txt.prog4Text },
+              { icon: <GraduationCap size={32} />, title: txt.prog1, text: txt.prog1Text },
+              { icon: <HeartPulse size={32} />, title: txt.prog2, text: txt.prog2Text },
+              { icon: <ShieldPlus size={32} />, title: txt.prog3, text: txt.prog3Text },
+              { icon: <Users size={32} />, title: txt.prog4, text: txt.prog4Text },
             ].map((p, i) => (
               <div
                 key={i}

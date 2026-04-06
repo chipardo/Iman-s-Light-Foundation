@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import Link from 'next/link';
 import { LanguageContext } from '@/context/LanguageContext';
+import { Heart, HandHeart, Users, Megaphone, Mic, Trophy } from 'lucide-react';
 import styles from './get-involved.module.css';
 
 export default function GetInvolvedPage() {
@@ -10,7 +11,7 @@ export default function GetInvolvedPage() {
 
   const ways = [
     {
-      icon: '💛',
+      icon: <Heart size={32} />,
       titleEn: 'Make a Donation',
       titleEs: 'Hacer una Donación',
       descEn: 'Your financial gift — no matter the size — directly funds our educational workshops, mental health programs, and community outreach.',
@@ -21,7 +22,7 @@ export default function GetInvolvedPage() {
       primary: true,
     },
     {
-      icon: '🙌',
+      icon: <HandHeart size={32} />,
       titleEn: 'Volunteer With Us',
       titleEs: 'Ser Voluntario',
       descEn: 'Lend your time and talents to help organize events, assist at workshops, and support our community outreach programs.',
@@ -32,7 +33,7 @@ export default function GetInvolvedPage() {
       primary: false,
     },
     {
-      icon: '🤝',
+      icon: <Users size={32} />,
       titleEn: 'Become a Partner',
       titleEs: 'Convertirse en Socio',
       descEn: 'Organizations and agencies can partner with us to expand our reach, share resources, and amplify the message of prevention.',
@@ -43,7 +44,7 @@ export default function GetInvolvedPage() {
       primary: false,
     },
     {
-      icon: '📢',
+      icon: <Megaphone size={32} />,
       titleEn: 'Spread the Word',
       titleEs: 'Correr la Voz',
       descEn: 'Follow us on social media and share our content. Awareness is the first step in prevention — help us reach more families.',
@@ -54,7 +55,7 @@ export default function GetInvolvedPage() {
       primary: false,
     },
     {
-      icon: '🎤',
+      icon: <Mic size={32} />,
       titleEn: 'Invite Us to Speak',
       titleEs: 'Invítanos a Hablar',
       descEn: 'We offer free educational presentations for schools, churches, community organizations, and businesses. Schedule a workshop.',
@@ -65,7 +66,7 @@ export default function GetInvolvedPage() {
       primary: false,
     },
     {
-      icon: '🏆',
+      icon: <Trophy size={32} />,
       titleEn: 'Become a Sponsor',
       titleEs: 'Convertirse en Patrocinador',
       descEn: 'Corporate sponsorships provide vital funding for our events and programs while giving your organization community visibility.',
