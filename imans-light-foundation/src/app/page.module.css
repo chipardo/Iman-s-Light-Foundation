@@ -159,7 +159,10 @@
 
 /* ===== STORY ===== */
 .storyImg {
-  width: 100%;
+  width: 90%; /* Shrink video just a little bit per request */
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
   height: auto;
   border-radius: var(--radius-xl);
   object-fit: cover;

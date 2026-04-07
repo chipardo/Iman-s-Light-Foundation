@@ -7,20 +7,20 @@ import styles from './donate.module.css';
 
 const tiers = {
   en: [
-    { amount: '$25', label: 'Friend', descEn: 'Provides educational materials for one student workshop.', icon: <Leaf size={32} /> },
-    { amount: '$50', label: 'Supporter', descEn: 'Funds a mental health wellness resource kit for a family.', icon: <Heart size={32} /> },
-    { amount: '$100', label: 'Champion', descEn: 'Sponsors one family for a complete workshop series.', icon: <Star size={32} /> },
-    { amount: '$250', label: 'Advocate', descEn: 'Helps host a community fentanyl awareness event.', icon: <Sparkles size={32} />, featured: true },
-    { amount: '$500', label: 'Guardian', descEn: 'Funds an entire school prevention workshop for 30+ students.', icon: <Gem size={32} /> },
-    { amount: 'Custom', label: 'Legacy', descEn: 'Your custom gift makes a lasting difference at any level.', icon: <Trophy size={32} /> },
+    { amount: '', label: 'Friend', descEn: 'Helps us print caring, honest educational guides for a local classroom.', icon: <Leaf size={32} /> },
+    { amount: '', label: 'Supporter', descEn: 'Provides a loving wellness kit for a family seeking mental health support.', icon: <Heart size={32} /> },
+    { amount: '', label: 'Champion', descEn: 'Sponsors a parent to attend our warm, guiding workshop series.', icon: <Star size={32} /> },
+    { amount: '', label: 'Advocate', descEn: 'Helps us host a beautiful community gathering for fentanyl awareness.', icon: <Sparkles size={32} />, featured: true },
+    { amount: '', label: 'Guardian', descEn: 'Brings our heartfelt school presentation directly to 30+ students.', icon: <Gem size={32} /> },
+    { amount: 'Custom', label: 'Legacy', descEn: 'Any gift you share helps us bring light and comfort to those in need.', icon: <Trophy size={32} /> },
   ],
   es: [
-    { amount: '$25', label: 'Amigo', descEn: 'Proporciona materiales educativos para un taller estudiantil.', icon: <Leaf size={32} /> },
-    { amount: '$50', label: 'Simpatizante', descEn: 'Financia un kit de recursos de bienestar de salud mental para una familia.', icon: <Heart size={32} /> },
-    { amount: '$100', label: 'Campeón', descEn: 'Patrocina a una familia para una serie completa de talleres.', icon: <Star size={32} /> },
-    { amount: '$250', label: 'Defensor', descEn: 'Ayuda a organizar un evento comunitario de concientización sobre el Fentanilo.', icon: <Sparkles size={32} />, featured: true },
-    { amount: '$500', label: 'Guardián', descEn: 'Financia un taller completo de prevención escolar para más de 30 estudiantes.', icon: <Gem size={32} /> },
-    { amount: 'Personalizado', label: 'Legado', descEn: 'Tu donación personalizada marca una diferencia duradera.', icon: <Trophy size={32} /> },
+    { amount: '', label: 'Amigo', descEn: 'Nos ayuda a imprimir guías educativas honestas para un aula local.', icon: <Leaf size={32} /> },
+    { amount: '', label: 'Simpatizante', descEn: 'Proporciona un kit de bienestar para una familia que busca apoyo emocional.', icon: <Heart size={32} /> },
+    { amount: '', label: 'Campeón', descEn: 'Patrocina a un padre para que asista a nuestros talleres de acompañamiento.', icon: <Star size={32} /> },
+    { amount: '', label: 'Defensor', descEn: 'Nos ayuda a organizar una hermosa reunión comunitaria de concientización.', icon: <Sparkles size={32} />, featured: true },
+    { amount: '', label: 'Guardián', descEn: 'Lleva nuestra presentación escolar a más de 30 estudiantes.', icon: <Gem size={32} /> },
+    { amount: 'Otro', label: 'Legado', descEn: 'Cualquier regalo que compartas nos ayuda a brindar luz y consuelo.', icon: <Trophy size={32} /> },
   ],
 };
 
