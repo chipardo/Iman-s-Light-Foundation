@@ -10,13 +10,13 @@ const tiers = {
     { amount: '', label: 'Platinum Sponsor', descEn: 'At the Platinum level, you become a foundational pillar of Iman’s Light, enabling sweeping organizational impact in schools.', icon: <Trophy size={32} />, featured: true },
     { amount: '', label: 'Gold Sponsor', descEn: 'Your Gold Sponsorship directly funds multiple interactive workshops and provides long-term mental wellness resources.', icon: <Gem size={32} /> },
     { amount: '', label: 'Silver Sponsor', descEn: 'A beautiful way to directly sponsor families and individuals who vitally need our Narcan kits and community support.', icon: <Star size={32} /> },
-    { amount: '', label: 'Educational Silver', descEn: 'Specifically funds our critical 'Truth About Drugs' school presentations, printing educational materials for teens.', icon: <Leaf size={32} /> },
+    { amount: '', label: 'Educational Silver', descEn: 'Specifically funds our critical "Truth About Drugs" school presentations, printing educational materials for teens.', icon: <Leaf size={32} /> },
   ],
   es: [
     { amount: '', label: 'Patrocinador Platino', descEn: 'En el nivel Platino, te conviertes en un pilar fundamental de la Luz de Iman, permitiendo un gran impacto en las escuelas.', icon: <Trophy size={32} />, featured: true },
     { amount: '', label: 'Patrocinador Oro', descEn: 'Tu patrocinio de Oro financia múltiples talleres interactivos y proporciona recursos de salud mental a largo plazo.', icon: <Gem size={32} /> },
     { amount: '', label: 'Patrocinador Plata', descEn: 'Una hermosa manera de patrocinar a las familias que necesitan vitalmente nuestros kits Narcan y apoyo comunitario.', icon: <Star size={32} /> },
-    { amount: '', label: 'Plata Educativo', descEn: 'Financia específicamente nuestras presentaciones escolares 'La Verdad Sobre las Drogas' e imprime materiales educativos.', icon: <Leaf size={32} /> },
+    { amount: '', label: 'Plata Educativo', descEn: 'Financia específicamente nuestras presentaciones escolares "La Verdad Sobre las Drogas" e imprime materiales educativos.', icon: <Leaf size={32} /> },
   ],
 };
 
