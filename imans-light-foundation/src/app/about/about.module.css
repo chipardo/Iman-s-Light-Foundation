@@ -119,3 +119,78 @@
 @media (max-width: 768px) {
   .missionGrid { grid-template-columns: 1fr; }
 }
+
+/* NEW TEAM CARD STYLES */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.teamCard {
+  background: rgba(20, 28, 46, 0.7);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.teamCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201, 168, 76, 0.6);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.teamImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--navy-800);
+}
+
+.teamImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .teamImage {
+  transform: scale(1.05);
+}
+
+.teamImageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(4, 8, 20, 1), transparent);
+  pointer-events: none;
+}
+
+.teamContent {
+  padding: 24px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
