@@ -7,20 +7,16 @@ import styles from './donate.module.css';
 
 const tiers = {
   en: [
-    { amount: '', label: 'Friend', descEn: 'Helps us print caring, honest educational guides for a local classroom.', icon: <Leaf size={32} /> },
-    { amount: '', label: 'Supporter', descEn: 'Provides a loving wellness kit for a family seeking mental health support.', icon: <Heart size={32} /> },
-    { amount: '', label: 'Champion', descEn: 'Sponsors a parent to attend our warm, guiding workshop series.', icon: <Star size={32} /> },
-    { amount: '', label: 'Advocate', descEn: 'Helps us host a beautiful community gathering for fentanyl awareness.', icon: <Sparkles size={32} />, featured: true },
-    { amount: '', label: 'Guardian', descEn: 'Brings our heartfelt school presentation directly to 30+ students.', icon: <Gem size={32} /> },
-    { amount: 'Custom', label: 'Legacy', descEn: 'Any gift you share helps us bring light and comfort to those in need.', icon: <Trophy size={32} /> },
+    { amount: '', label: 'Platinum Sponsor', descEn: 'At the Platinum level, you become a foundational pillar of Iman’s Light, enabling sweeping organizational impact in schools.', icon: <Trophy size={32} />, featured: true },
+    { amount: '', label: 'Gold Sponsor', descEn: 'Your Gold Sponsorship directly funds multiple interactive workshops and provides long-term mental wellness resources.', icon: <Gem size={32} /> },
+    { amount: '', label: 'Silver Sponsor', descEn: 'A beautiful way to directly sponsor families and individuals who vitally need our Narcan kits and community support.', icon: <Star size={32} /> },
+    { amount: '', label: 'Educational Silver', descEn: 'Specifically funds our critical 'Truth About Drugs' school presentations, printing educational materials for teens.', icon: <Leaf size={32} /> },
   ],
   es: [
-    { amount: '', label: 'Amigo', descEn: 'Nos ayuda a imprimir guías educativas honestas para un aula local.', icon: <Leaf size={32} /> },
-    { amount: '', label: 'Simpatizante', descEn: 'Proporciona un kit de bienestar para una familia que busca apoyo emocional.', icon: <Heart size={32} /> },
-    { amount: '', label: 'Campeón', descEn: 'Patrocina a un padre para que asista a nuestros talleres de acompañamiento.', icon: <Star size={32} /> },
-    { amount: '', label: 'Defensor', descEn: 'Nos ayuda a organizar una hermosa reunión comunitaria de concientización.', icon: <Sparkles size={32} />, featured: true },
-    { amount: '', label: 'Guardián', descEn: 'Lleva nuestra presentación escolar a más de 30 estudiantes.', icon: <Gem size={32} /> },
-    { amount: 'Otro', label: 'Legado', descEn: 'Cualquier regalo que compartas nos ayuda a brindar luz y consuelo.', icon: <Trophy size={32} /> },
+    { amount: '', label: 'Patrocinador Platino', descEn: 'En el nivel Platino, te conviertes en un pilar fundamental de la Luz de Iman, permitiendo un gran impacto en las escuelas.', icon: <Trophy size={32} />, featured: true },
+    { amount: '', label: 'Patrocinador Oro', descEn: 'Tu patrocinio de Oro financia múltiples talleres interactivos y proporciona recursos de salud mental a largo plazo.', icon: <Gem size={32} /> },
+    { amount: '', label: 'Patrocinador Plata', descEn: 'Una hermosa manera de patrocinar a las familias que necesitan vitalmente nuestros kits Narcan y apoyo comunitario.', icon: <Star size={32} /> },
+    { amount: '', label: 'Plata Educativo', descEn: 'Financia específicamente nuestras presentaciones escolares 'La Verdad Sobre las Drogas' e imprime materiales educativos.', icon: <Leaf size={32} /> },
   ],
 };
 

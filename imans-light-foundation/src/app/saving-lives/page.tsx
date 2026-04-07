@@ -15,8 +15,8 @@ const t = {
     sections: [
       {
         icon: <HeartPulse size={36} color="var(--gold)" />,
-        title: 'Naloxone Direct Distribution',
-        desc: 'We place life-saving power directly into the hands of those who need it most. Through our strategic partnership with the Florida Department of Children and Families, we distribute comprehensive Narcan kits complete with protective gloves and breathing barriers so that ordinary citizens can safely reverse an overdose the moment it happens.',
+        title: 'Naloxone Distribution Program',
+        desc: 'We proudly distribute free Naloxone/Narcan kits through our partnership with the Florida Department of Children and Families. Each kit includes a display, keychain, gloves, and plastic mouth protection to ensure safe and effective overdose response.',
       },
       {
         icon: <ShieldAlert size={36} color="var(--gold)" />,
@@ -49,8 +49,8 @@ const t = {
     sections: [
       {
         icon: <HeartPulse size={36} color="var(--gold)" />,
-        title: 'Distribución Directa de Naloxona',
-        desc: 'Ponemos el poder de salvar vidas directamente en las manos de quienes más lo necesitan. A través de nuestra asociación estratégica con el Departamento de Niños y Familias de Florida, distribuimos kits completos de Narcan (con guantes protectores y barreras respiratorias) para que cualquier persona pueda revertir de manera segura y compasiva una sobredosis en el momento crítico.',
+        title: 'Programa de Distribución de Naloxona',
+        desc: 'Distribuimos orgullosamente kits gratuitos de Naloxona/Narcan a través de nuestra asociación con el Departamento de Niños y Familias de Florida. Cada kit incluye un estuche, llavero, guantes y protección bucal de plástico para garantizar una respuesta segura y efectiva.',
       },
       {
         icon: <ShieldAlert size={36} color="var(--gold)" />,
@@ -97,7 +97,7 @@ export default function SavingLivesPage() {
         </div>
       </div>
 
-      <section className="section bg-light">
+      <section className="section transparent-bg">
         <div className="container">
           <div className="text-center" style={{ marginBottom: '60px' }}>
             <h2 className="section-title">{txt.initiativesTitle}</h2>
