@@ -256,12 +256,13 @@ export default function HomePage() {
         <div className="container">
           <div className="grid-2">
             <div ref={addRef} className="fade-up">
-              <Image
-                src="https://static.wixstatic.com/media/56e6ee_3d08247bcecf4368844f77cc2095fffe~mv2.jpg"
-                alt="Iman's Light Foundation Logo"
-                width={520}
-                height={520}
-                className={styles.storyImg}
+              <video 
+                src="https://video.wixstatic.com/video/56e6ee_aeaf7c872eb5487cbda598589baea0e7/720p/mp4/file.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className={styles.storyImg} 
               />
             </div>
             <div ref={addRef} className="fade-up" style={{ transitionDelay: '0.2s' }}>

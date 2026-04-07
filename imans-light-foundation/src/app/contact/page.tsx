@@ -107,13 +107,7 @@ export default function ContactPage() {
                     <a href="mailto:imanslightfoundation@gmail.com" className={styles.contactCardValue}>imanslightfoundation@gmail.com</a>
                   </div>
                 </div>
-                <div className={styles.contactCard}>
-                  <div className={styles.contactCardIcon}><MapPin /></div>
-                  <div>
-                    <div className={styles.contactCardLabel}>{isEs ? 'Área de Servicio' : 'Service Area'}</div>
-                    <div className={styles.contactCardValue}>South Florida</div>
-                  </div>
-                </div>
+
                 <div className={styles.contactCard}>
                   <div className={styles.contactCardIcon}><Clipboard /></div>
                   <div>

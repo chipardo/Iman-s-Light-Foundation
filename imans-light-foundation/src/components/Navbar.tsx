@@ -45,7 +45,7 @@ const navLinks = [
     dropdown: [
       { href: '/donate', labelEn: 'Donate Now', labelEs: 'Donar Ahora' },
       { href: '/get-involved', labelEn: 'Volunteer', labelEs: 'Ser Voluntario' },
-      { href: '/contact', labelEn: 'Sponsor a Workshop', labelEs: 'Patrocinar un Taller' },
+      { href: '/contact', labelEn: 'Contact Us', labelEs: 'Contáctanos' },
     ],
   },
 ];
