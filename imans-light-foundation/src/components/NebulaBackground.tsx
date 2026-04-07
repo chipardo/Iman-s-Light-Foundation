@@ -28,7 +28,7 @@ export default function NebulaBackground() {
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
           radius: Math.random() * 1.2 + 0.2, // Smaller, subtle stars
-          vx: (Math.random() - 0.5) * 0.1, // Slower drift
+          vx: (Math.random(), 0.5) * 0.1, // Slower drift
           vy: -Math.abs((Math.random() * 0.2) + 0.1), // Drift upwards
           baseAlpha: Math.random() * 0.6 + 0.1,
           isGold: Math.random() > 0.7 // 30% of stars are gold tinted

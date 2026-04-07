@@ -34,8 +34,7 @@ const navLinks = [
     labelEn: 'Media & Events',
     labelEs: 'Medios y Eventos',
     dropdown: [
-      { href: '/events', labelEn: 'Upcoming Events', labelEs: 'Próximos Eventos' },
-      { href: '/events#past', labelEn: 'Past Events', labelEs: 'Eventos Pasados' },
+      { href: '/events', labelEn: 'Events Calendar', labelEs: 'Calendario de Eventos' },
       { href: '/gallery', labelEn: 'Photo Gallery', labelEs: 'Galería de Fotos' },
     ],
   },
@@ -44,9 +43,8 @@ const navLinks = [
     labelEn: 'Support & Giving',
     labelEs: 'Apoyo y Donaciones',
     dropdown: [
-      { href: '/donate', labelEn: 'Donate Online', labelEs: 'Donar en Línea' },
-      { href: '/get-involved', labelEn: 'Other Ways to Give', labelEs: 'Otras Formas de Dar' },
-      { href: '/get-involved#volunteer', labelEn: 'Volunteer', labelEs: 'Ser Voluntario' },
+      { href: '/donate', labelEn: 'Donate Now', labelEs: 'Donar Ahora' },
+      { href: '/get-involved', labelEn: 'Volunteer', labelEs: 'Ser Voluntario' },
       { href: '/contact', labelEn: 'Sponsor a Workshop', labelEs: 'Patrocinar un Taller' },
     ],
   },

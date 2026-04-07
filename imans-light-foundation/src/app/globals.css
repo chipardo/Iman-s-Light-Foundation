@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 /* =============================================
    DESIGN TOKENS
@@ -61,11 +61,11 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px; /* Greatly increased base font size for better legibility */
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--navy); /* True Dark Mode Base */
   color: var(--off-white);
   line-height: 1.6;
@@ -199,7 +199,7 @@ p {
    ============================================= */
 .section-label {
   display: inline-block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -237,7 +237,7 @@ p {
   gap: 8px;
   padding: 14px 32px;
   border-radius: 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -403,7 +403,9 @@ p {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   color: var(--white);
-  background: var(--white);
+  background: rgba(20, 28, 46, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: var(--transition);
   outline: none;
 }

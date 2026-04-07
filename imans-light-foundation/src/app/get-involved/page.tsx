@@ -14,8 +14,8 @@ export default function GetInvolvedPage() {
       icon: <Heart size={32} />,
       titleEn: 'Make a Donation',
       titleEs: 'Hacer una Donación',
-      descEn: 'Your financial gift — no matter the size — directly funds our educational workshops, mental health programs, and community outreach.',
-      descEs: 'Tu donación — sin importar el tamaño — financia directamente nuestros talleres educativos, programas de salud mental y alcance comunitario.',
+      descEn: 'Your financial gift, no matter the size, directly funds our educational workshops, mental health programs, and community outreach.',
+      descEs: 'Tu donación, sin importar el tamaño, financia directamente nuestros talleres educativos, programas de salud mental y alcance comunitario.',
       ctaEn: 'Donate Now',
       ctaEs: 'Donar Ahora',
       href: '/donate',
@@ -47,7 +47,7 @@ export default function GetInvolvedPage() {
       icon: <Megaphone size={32} />,
       titleEn: 'Spread the Word',
       titleEs: 'Correr la Voz',
-      descEn: 'Follow us on social media and share our content. Awareness is the first step in prevention — help us reach more families.',
+      descEn: 'Follow us on social media and share our content. Awareness is the first step in prevention, help us reach more families.',
       descEs: 'Síguenos en redes sociales y comparte nuestro contenido. La concienciación es el primer paso en la prevención.',
       ctaEn: 'Follow on Instagram',
       ctaEs: 'Seguir en Instagram',
@@ -110,7 +110,7 @@ export default function GetInvolvedPage() {
           </div>
           <span className="section-label">{isEs ? 'Únete a Nosotros' : 'Join Us'}</span>
           <h1>{isEs ? 'Múltiples Formas de Participar' : 'Many Ways to Make a Difference'}</h1>
-          <p>{isEs ? 'Cada persona puede contribuir a la misión de Iman\'s Light — ya sea donando, siendo voluntario, o simplemente corriendo la voz.' : "Everyone can contribute to Iman's Light's mission — whether through donating, volunteering, or simply spreading the word."}</p>
+          <p>{isEs ? 'Cada persona puede contribuir a la misión de Iman\'s Light, ya sea donando, siendo voluntario, o simplemente corriendo la voz.' : "Everyone can contribute to Iman's Light's mission, whether through donating, volunteering, or simply spreading the word."}</p>
         </div>
       </div>
 

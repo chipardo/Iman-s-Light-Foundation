@@ -39,7 +39,7 @@ const programs = {
       tag: 'Grief & Recovery',
       title: 'Victim & Family Sanctuary',
       subtitle: 'Walking alongside families when the unimaginable happens.',
-      description: 'When the unthinkable happens, the isolation can be as devastating as the loss itself. We stand beside families whose loved ones have been stolen by fentanyl, providing an unwavering pillar of support. Our sanctuary systems guide grieving families through the darkest hours of their lives—connecting them with specialized grief counselors, establishing community healing networks, and helping them navigate the complex aftermath of an overdose. For those actively fighting addiction, we sponsor critical bed placements and rapidly connect them to compassionate healthcare services. You do not have to fight this war alone; we are here.',
+      description: 'When the unthinkable happens, the isolation can be as devastating as the loss itself. We stand beside families whose loved ones have been stolen by fentanyl, providing an unwavering pillar of support. Our sanctuary systems guide grieving families through the darkest hours of their lives connecting them with specialized grief counselors, establishing community healing networks, and helping them navigate the complex aftermath of an overdose. For those actively fighting addiction, we sponsor critical bed placements and rapidly connect them to compassionate healthcare services. You do not have to fight this war alone; we are here.',
       cta: 'Find Immediate Support',
     },
   ],

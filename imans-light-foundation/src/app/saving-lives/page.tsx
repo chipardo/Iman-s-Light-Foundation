@@ -10,13 +10,13 @@ const t = {
     breadcrumb: 'Home',
     heroLabel: 'Initiatives',
     heroTitle: 'Saving Lives on the Frontline',
-    heroSub: 'Your support does more than fund a program—it arms a mother, a teacher, or a friend with the exact tools and knowledge required to reverse a fatal overdose and restore a future.',
+    heroSub: 'Your support does more than fund a program it arms a mother, a teacher, or a friend with the exact tools and knowledge required to reverse a fatal overdose and restore a future.',
     initiativesTitle: 'How Your Support Intervenes',
     sections: [
       {
         icon: <HeartPulse size={36} color="var(--gold)" />,
         title: 'Naloxone Direct Distribution',
-        desc: 'We place life-saving power directly into the hands of those who need it most. Through our strategic partnership with the Florida Department of Children and Families, we distribute comprehensive Narcan kits—complete with protective gloves and breathing barriers—so that ordinary citizens can safely reverse an overdose the moment it happens.',
+        desc: 'We place life-saving power directly into the hands of those who need it most. Through our strategic partnership with the Florida Department of Children and Families, we distribute comprehensive Narcan kits complete with protective gloves and breathing barriers so that ordinary citizens can safely reverse an overdose the moment it happens.',
       },
       {
         icon: <ShieldAlert size={36} color="var(--gold)" />,
@@ -38,7 +38,7 @@ const t = {
     affectedTitle: 'Fentanyl Does Not Discriminate',
     affectedText1: 'The crisis we face today ignores zip codes, report cards, and family backgrounds. It reaches into classrooms and quiet neighborhoods alike, targeting youth who believe they are making a harmless decision.',
     affectedText2: 'Our programs exist to step into that void. When traditional education systems or private insurances cannot cover the specialized, urgent training required to identify a synthetic opioid threat, Iman’s Light Foundation provides it at zero cost.',
-    affectedText3: 'In 2023 alone, our nation lost over 122,000 souls—many of them young adults with their entire lives ahead of them. We are fighting to ensure that your child, your neighbor, and your community are equipped to survive and thrive.',
+    affectedText3: 'In 2023 alone, our nation lost over 122,000 souls many of them young adults with their entire lives ahead of them. We are fighting to ensure that your child, your neighbor, and your community are equipped to survive and thrive.',
   },
   es: {
     breadcrumb: 'Inicio',

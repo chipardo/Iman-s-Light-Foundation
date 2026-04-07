@@ -26,7 +26,7 @@ export default function ContactPage() {
           </div>
           <span className="section-label">{isEs ? 'Contacto' : 'Contact Us'}</span>
           <h1>{isEs ? 'Estamos Aquí Para Ayudar' : "We're Here to Help"}</h1>
-          <p>{isEs ? 'Ya sea que tengas una pregunta, quieras invitarnos a hablar, o necesites apoyo — no dudes en comunicarte con nosotros.' : "Whether you have a question, want to invite us to speak, or need support — don't hesitate to reach out."}</p>
+          <p>{isEs ? 'Ya sea que tengas una pregunta, quieras invitarnos a hablar, o necesites apoyo, no dudes en comunicarte con nosotros.' : "Whether you have a question, want to invite us to speak, or need support, don't hesitate to reach out."}</p>
         </div>
       </div>
 

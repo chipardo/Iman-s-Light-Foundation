@@ -15,7 +15,7 @@ const t = {
     heroSub: 'From profound heartbreak emerged an unbreakable resolve. We exist to ensure no other family has to navigate the devastating silence left behind by fentanyl.',
     storyLabel: "Our Genesis",
     storyTitle: 'A Life That Demands Defense',
-    storyText1: "Iman’s Light Foundation was not born in a boardroom; it was forged in the fire of unimaginable grief. We were created in memory and absolute honor of Iman, a beloved light in our community whose life was tragically and abruptly stolen by fentanyl—a silent, synthetic warfare that is aggressively targeting our youth and devastating families across America.",
+    storyText1: "Iman’s Light Foundation was not born in a boardroom; it was forged in the fire of unimaginable grief. We were created in memory and absolute honor of Iman, a beloved light in our community whose life was tragically and abruptly stolen by fentanyl a silent, synthetic warfare that is aggressively targeting our youth and devastating families across America.",
     storyText2: "Today, we operate on the frontlines of a crisis where experimentation is fatal. We reject the normalization of these tragedies. We demand a world where children can make mistakes without paying with their lives, where communities are preemptively armed with absolute facts, and where human life is guarded ferociously against those who manufacture and distribute poison.",
     storyText3: "Through Iman’s light, we have transformed our darkest hour into an unyielding shield for your family. We stand as a testament that love is stronger than addiction, and through education, immediate prevention, and aggressive advocacy, we will save lives.",
     missionLabel: 'Our Core Reason',
@@ -206,7 +206,7 @@ export default function AboutPage() {
           <div className="gold-divider center" />
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.8)' }}>{txt.partnersSub}</p>
           <div className={styles.partnerLogos} style={{ marginTop: '40px' }}>
-            {['Florida Dept of Children & Families', 'ISAVEFL', 'DEA - One Pill Can Kill', 'Local School Boards'].map((p, i) => (
+            {['Florida Dept of Children & Families', 'ISAVEFL', 'DEA, One Pill Can Kill', 'Local School Boards'].map((p, i) => (
               <div key={i} className={styles.partnerLogo} style={{ border: '1px solid rgba(255,255,255,0.2)', padding: '20px 30px', borderRadius: '8px', color: 'var(--white)', fontWeight: 600 }}>{p}</div>
             ))}
           </div>
