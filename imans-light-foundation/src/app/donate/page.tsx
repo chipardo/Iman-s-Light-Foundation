@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LanguageContext } from '@/context/LanguageContext';
-import { Leaf, Heart, Star, Sparkles, Gem, Trophy, Mail, RefreshCcw, Building2 } from 'lucide-react';
+import { Leaf, Heart, Star, Sparkles, Gem, Trophy, Mail, RefreshCcw, Building2 , GraduationCap, Heart, ShieldAlert, Scale } from 'lucide-react';
 import styles from './donate.module.css';
 
 const tiers = {

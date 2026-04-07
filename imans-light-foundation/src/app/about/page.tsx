@@ -308,7 +308,7 @@ export default function AboutPage() {
             
             {/* Extended text partners from Wix data */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center', marginTop: '24px' }}>
-              {['Secure Your Drink', 'Outreach Behavior Support', 'Infinity Life Wellness Center', 'Behavior Support Center', 'Improving Lives Community Mental Health', 'Luxe Properties', 'DAER Nightclub'].map((p, i) => (
+              {['Secure Your Drink', 'Outreach Behavior Support', 'Infinity Life Wellness Center', 'Behavior Support Center of Florida', 'Improving Lives Community', 'Luxe Properties', 'DAER Nightclub', 'Juan Carlos Pinera', 'Master Bodyworker', 'ScribeAmerica'].map((p, i) => (
                 <div key={i} className={styles.partnerLogo} style={{ border: '1px solid rgba(255,255,255,0.2)', padding: '16px 24px', borderRadius: '8px', color: 'var(--white)', fontWeight: 600 }}>{p}</div>
               ))}
             </div>
