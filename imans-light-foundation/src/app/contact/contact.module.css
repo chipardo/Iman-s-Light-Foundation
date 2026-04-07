@@ -11,7 +11,9 @@
 }
 
 .successMsg {
-  background: var(--off-white);
+  background: rgba(20, 28, 46, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
   border: 2px solid rgba(201,168,76,0.3);
   border-radius: var(--radius-lg);
   padding: 48px;
@@ -59,9 +61,10 @@
   align-items: flex-start;
   gap: 16px;
   padding: 20px 24px;
-  background: var(--off-white);
+  background: rgba(20, 28, 46, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
   border-radius: var(--radius-md);
-  border: 1px solid var(--gray-200);
   transition: all 0.2s ease;
 }
 

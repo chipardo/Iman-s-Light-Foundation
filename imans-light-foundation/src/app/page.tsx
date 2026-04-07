@@ -257,7 +257,7 @@ export default function HomePage() {
           <div className="grid-2">
             <div ref={addRef} className="fade-up">
               <Image
-                src="https://static.wixstatic.com/media/56e6ee_1883900cfc974a68ba6cd750894bc110~mv2.jpg"
+                src="https://static.wixstatic.com/media/56e6ee_3d08247bcecf4368844f77cc2095fffe~mv2.jpg"
                 alt="Iman's Light Foundation Logo"
                 width={520}
                 height={520}
