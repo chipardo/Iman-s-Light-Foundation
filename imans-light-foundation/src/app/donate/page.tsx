@@ -3,21 +3,79 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LanguageContext } from '@/context/LanguageContext';
-import { Leaf, Heart, Star, Sparkles, Gem, Trophy, Mail, RefreshCcw, Building2 , GraduationCap, Heart, ShieldAlert, Scale } from 'lucide-react';
+import { Leaf, Star, Sparkles, Gem, Trophy, Mail, RefreshCcw, Building2, GraduationCap, Heart, ShieldAlert, Scale } from 'lucide-react';
 import styles from './donate.module.css';
 
 const tiers = {
   en: [
-    { amount: '', label: 'Platinum Sponsor', descEn: 'At the Platinum level, you become a foundational pillar of Iman’s Light, enabling sweeping organizational impact in schools.', icon: <Trophy size={32} />, featured: true },
-    { amount: '', label: 'Gold Sponsor', descEn: 'Your Gold Sponsorship directly funds multiple interactive workshops and provides long-term mental wellness resources.', icon: <Gem size={32} /> },
-    { amount: '', label: 'Silver Sponsor', descEn: 'A beautiful way to directly sponsor families and individuals who vitally need our Narcan kits and community support.', icon: <Star size={32} /> },
-    { amount: '', label: 'Educational Silver', descEn: 'Specifically funds our critical "Truth About Drugs" school presentations, printing educational materials for teens.', icon: <Leaf size={32} /> },
+      {
+        id: 'workshop',
+        name: 'The Workshop Package',
+        amount: '$5,000',
+        icon: <GraduationCap size={32} color="var(--gold-light)" />,
+        featured: true,
+        descEn: 'Directly fund four interactive "Truth About Drugs" presentations for an entire school. Includes projector equipment, printed materials, and expert speakers.',
+        descEs: 'Financia directamente cuatro presentaciones interactivas completas para toda una escuela. Equipos, materiales e instructores expertos.'
+      },
+      {
+        id: 'family',
+        name: 'The Family Support Package',
+        amount: '$2,500',
+        icon: <Heart size={32} color="var(--gold)" />,
+        descEn: 'Provide a grieving family or at-risk youth with 6 months of dedicated mental health counseling from our licensed psychological advisors.',
+        descEs: 'Proporciona a una familia en duelo o a un joven en riesgo 6 meses de asesoramiento de salud mental dedicado con nuestros psicólogos.'
+      },
+      {
+        id: 'lifesaver',
+        name: 'The Community Lifesaver',
+        amount: '$1,000',
+        icon: <ShieldAlert size={32} color="var(--gold)" />,
+        descEn: 'Supply a local community center with bulk Narcan kits and specialized training on overdose reversal and emergency response.',
+        descEs: 'Proporcionar al centro comunitario local kits masivos de Narcan y capacitación especializada sobre reversión de sobredosis.'
+      },
+      {
+        id: 'ambassador',
+        name: 'The Ambassador',
+        amount: '$500+',
+        icon: <Scale size={32} color="var(--gold)" />,
+        descEn: 'Support our ongoing legislative advocacy to aggressively punish drug traffickers and enforce stricter child protection laws.',
+        descEs: 'Apoye nuestra defensa legislativa para castigar a los traficantes y hacer cumplir leyes más estrictas de protección.'
+      }
   ],
   es: [
-    { amount: '', label: 'Patrocinador Platino', descEn: 'En el nivel Platino, te conviertes en un pilar fundamental de la Luz de Iman, permitiendo un gran impacto en las escuelas.', icon: <Trophy size={32} />, featured: true },
-    { amount: '', label: 'Patrocinador Oro', descEn: 'Tu patrocinio de Oro financia múltiples talleres interactivos y proporciona recursos de salud mental a largo plazo.', icon: <Gem size={32} /> },
-    { amount: '', label: 'Patrocinador Plata', descEn: 'Una hermosa manera de patrocinar a las familias que necesitan vitalmente nuestros kits Narcan y apoyo comunitario.', icon: <Star size={32} /> },
-    { amount: '', label: 'Plata Educativo', descEn: 'Financia específicamente nuestras presentaciones escolares "La Verdad Sobre las Drogas" e imprime materiales educativos.', icon: <Leaf size={32} /> },
+      {
+        id: 'workshop',
+        name: 'Paquete de Taller',
+        amount: '$5,000',
+        icon: <GraduationCap size={32} color="var(--gold-light)" />,
+        featured: true,
+        descEn: 'Directly fund four interactive "Truth About Drugs" presentations for an entire school. Includes projector equipment, printed materials, and expert speakers.',
+        descEs: 'Financia directamente cuatro presentaciones interactivas completas para toda una escuela. Equipos, materiales e instructores expertos.'
+      },
+      {
+        id: 'family',
+        name: 'Paquete de Apoyo Familiar',
+        amount: '$2,500',
+        icon: <Heart size={32} color="var(--gold)" />,
+        descEn: 'Provide a grieving family or at-risk youth with 6 months of dedicated mental health counseling from our licensed psychological advisors.',
+        descEs: 'Proporciona a una familia en duelo o a un joven en riesgo 6 meses de asesoramiento de salud mental dedicado con nuestros psicólogos.'
+      },
+      {
+        id: 'lifesaver',
+        name: 'Salvavidas Comunitario',
+        amount: '$1,000',
+        icon: <ShieldAlert size={32} color="var(--gold)" />,
+        descEn: 'Supply a local community center with bulk Narcan kits and specialized training on overdose reversal and emergency response.',
+        descEs: 'Proporcionar al centro comunitario local kits masivos de Narcan y capacitación especializada sobre reversión de sobredosis.'
+      },
+      {
+        id: 'ambassador',
+        name: 'El Embajador',
+        amount: '$500+',
+        icon: <Scale size={32} color="var(--gold)" />,
+        descEn: 'Support our ongoing legislative advocacy to aggressively punish drug traffickers and enforce stricter child protection laws.',
+        descEs: 'Apoye nuestra defensa legislativa para castigar a los traficantes y hacer cumplir leyes más estrictas de protección.'
+      }
   ],
 };
 
@@ -55,8 +113,8 @@ export default function DonatePage() {
               <div key={i} className={`card ${styles.tierCard} ${(tier as any).featured ? styles.tierFeatured : ''}`}>
                 <div className={styles.tierIcon}>{tier.icon}</div>
                 <div className={styles.tierAmount}>{tier.amount}</div>
-                <div className={styles.tierLabel}>{tier.label}</div>
-                <p className={styles.tierDesc}>{tier.descEn}</p>
+                <div className={styles.tierLabel}>{tier.name}</div>
+                <p className={styles.tierDesc}>{isEs ? tier.descEs : tier.descEn}</p>
                 <a
                   href="https://www.imanslightfoundation.org/donations"
                   target="_blank"
