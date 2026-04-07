@@ -83,7 +83,7 @@
 
 .socialBtn:hover {
   background: #C9A84C;
-  color: #0A0E1A;
+  color: var(--white);
   border-color: #C9A84C;
   transform: translateY(-2px);
 }

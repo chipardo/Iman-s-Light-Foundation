@@ -9,70 +9,70 @@ const t = {
   en: {
     breadcrumb: 'Home',
     heroLabel: 'Initiatives',
-    heroTitle: 'Saving Lives',
-    heroSub: 'Through direct action, critical partnerships, and resource distribution, we are actively preventing tragedies on the front lines.',
-    initiativesTitle: 'Our Life-Saving Initiatives',
+    heroTitle: 'Saving Lives on the Frontline',
+    heroSub: 'Your support does more than fund a program—it arms a mother, a teacher, or a friend with the exact tools and knowledge required to reverse a fatal overdose and restore a future.',
+    initiativesTitle: 'How Your Support Intervenes',
     sections: [
       {
         icon: <HeartPulse size={36} color="var(--gold)" />,
-        title: 'Naloxone Distribution Program',
-        desc: 'We proudly distribute free Naloxone/Narcan kits through our partnership with the Florida Department of Children and Families. Each kit includes a display, keychain, gloves, and plastic mouth protection to ensure safe and effective overdose response.',
+        title: 'Naloxone Direct Distribution',
+        desc: 'We place life-saving power directly into the hands of those who need it most. Through our strategic partnership with the Florida Department of Children and Families, we distribute comprehensive Narcan kits—complete with protective gloves and breathing barriers—so that ordinary citizens can safely reverse an overdose the moment it happens.',
       },
       {
         icon: <ShieldAlert size={36} color="var(--gold)" />,
-        title: 'One Pill Can Kill Campaign',
-        desc: 'In collaboration with the DEA, we actively support the “One Pill Can Kill” campaign to raise awareness about the dangers of counterfeit prescription pills laced with fentanyl.',
+        title: 'Exposing Counterfeit Threats',
+        desc: 'Fentanyl hides in plain sight. In coalition with the DEA’s "One Pill Can Kill" initiative, we go into schools and community centers to shatter the illusion of safe recreational drug use, exposing the brutal reality that a single counterfeit prescription pill can carry a lethal dose of synthetic opioids.',
       },
       {
         icon: <Activity size={36} color="var(--gold)" />,
-        title: 'ISAVEFL Participation',
-        desc: 'We are official participants in the ISAVEFL initiative, working to make life-saving opioid overdose reversal medication more accessible throughout the community.',
+        title: 'Community-Wide Resiliency',
+        desc: 'As active participants in ISAVEFL, we are expanding the grid of readily available opioid reversal medications. Our goal is to ensure that no neighborhood, campus, or public space is left defenseless during the critical three-minute window of an overdose event.',
       },
       {
         icon: <Users size={36} color="var(--gold)" />,
-        title: 'Youth & Family Support',
-        desc: 'We focus on empowering youth and families through prevention education, recovery resources, and support programs that build resilience against substance misuse.',
+        title: 'Supporting the Grieving',
+        desc: 'Beyond immediate prevention, we provide a sanctuary for families devastated by loss. We facilitate healing circles and strategic support systems that transform unimaginable grief into powerful, community-protecting advocacy.',
       },
     ],
-    affectedLabel: 'Who We Help',
-    affectedTitle: 'Supporting Affected Communities',
-    affectedText1: 'Children, youth, adults, schools, underserved communities and the community at large greatly benefit from our educational and transformative programs and initiatives.',
-    affectedText2: 'Participants are provided with a safe space in which to receive information and share their perspectives and experiences. Drugs, fake pills and criminals don’t discriminate. An overdose can happen to anyone.',
-    affectedText3: 'In 2023 alone we lost 122,000 souls according to the CDC, many of them youth. Unwavering education, awareness, prevention and wrap-around programs are proving to be key.',
+    affectedLabel: 'The Reality We Face',
+    affectedTitle: 'Fentanyl Does Not Discriminate',
+    affectedText1: 'The crisis we face today ignores zip codes, report cards, and family backgrounds. It reaches into classrooms and quiet neighborhoods alike, targeting youth who believe they are making a harmless decision.',
+    affectedText2: 'Our programs exist to step into that void. When traditional education systems or private insurances cannot cover the specialized, urgent training required to identify a synthetic opioid threat, Iman’s Light Foundation provides it at zero cost.',
+    affectedText3: 'In 2023 alone, our nation lost over 122,000 souls—many of them young adults with their entire lives ahead of them. We are fighting to ensure that your child, your neighbor, and your community are equipped to survive and thrive.',
   },
   es: {
     breadcrumb: 'Inicio',
     heroLabel: 'Iniciativas',
-    heroTitle: 'Salvando Vidas',
-    heroSub: 'A través de la acción directa, asociaciones críticas y distribución de recursos, estamos previniendo tragedias en la primera línea.',
-    initiativesTitle: 'Nuestras Iniciativas que Salvan Vidas',
+    heroTitle: 'Salvando Vidas en la Primera Línea',
+    heroSub: 'Su apoyo hace más que financiar un programa: equipa a una madre, a un maestro o a un amigo con las herramientas y el conocimiento exactos para revertir una sobredosis letal y restaurar un futuro.',
+    initiativesTitle: 'Cómo Interviene su Apoyo',
     sections: [
       {
         icon: <HeartPulse size={36} color="var(--gold)" />,
-        title: 'Programa de Distribución de Naloxona',
-        desc: 'Distribuimos con orgullo kits gratuitos de Naloxona/Narcan a través de nuestra asociación con el Departamento de Niños y Familias de Florida. Cada kit incluye un llavero, guantes y protección bucal de plástico para garantizar una respuesta segura y eficaz en caso de sobredosis.',
+        title: 'Distribución Directa de Naloxona',
+        desc: 'Ponemos el poder de salvar vidas directamente en las manos de quienes más lo necesitan. A través de nuestra asociación estratégica con el Departamento de Niños y Familias de Florida, distribuimos kits completos de Narcan (con guantes protectores y barreras respiratorias) para que cualquier persona pueda revertir de manera segura y compasiva una sobredosis en el momento crítico.',
       },
       {
         icon: <ShieldAlert size={36} color="var(--gold)" />,
-        title: 'Campaña Una Pastilla Puede Matar',
-        desc: 'En colaboración con la DEA, apoyamos activamente la campaña "One Pill Can Kill" para crear conciencia sobre los peligros de las píldoras recetadas falsificadas mezcladas con fentanilo.',
+        title: 'Exponiendo Amenazas Falsificadas',
+        desc: 'El fentanilo se esconde a simple vista. En coalición con la iniciativa "One Pill Can Kill" de la DEA, visitamos escuelas y centros para destruir la ilusión de que existen drogas recreativas seguras, exponiendo la brutal realidad de que una sola píldora falsificada puede contener una dosis letal.',
       },
       {
         icon: <Activity size={36} color="var(--gold)" />,
-        title: 'Participación en ISAVEFL',
-        desc: 'Somos participantes oficiales en la iniciativa ISAVEFL, trabajando para que la medicación para revertir sobredosis de opioides sea más accesible en toda la comunidad.',
+        title: 'Resiliencia Comunitaria',
+        desc: 'Como participantes activos de ISAVEFL, estamos expandiendo la red de medicamentos disponibles para revertir opioides. Nuestro objetivo es asegurar que ningún vecindario o campus quede indefenso durante los tres minutos críticos de una sobredosis.',
       },
       {
         icon: <Users size={36} color="var(--gold)" />,
-        title: 'Apoyo a Jóvenes y Familias',
-        desc: 'Nos enfocamos en empoderar a jóvenes y familias a través de educación preventiva, recursos de recuperación y programas de apoyo que desarrollan resiliencia contra el abuso de sustancias.',
+        title: 'Acompañando en el Duelo',
+        desc: 'Más allá de la prevención, brindamos un santuario para las familias devastadas por la pérdida. Facilitamos círculos de sanación y sistemas de apoyo que transforman un dolor inimaginable en una poderosa labor de abogacía que protege a la comunidad.',
       },
     ],
-    affectedLabel: 'A Quién Ayudamos',
-    affectedTitle: 'Apoyando a las Comunidades Afectadas',
-    affectedText1: 'Niños, jóvenes, adultos, escuelas, comunidades marginadas y la comunidad en general se benefician enormemente de nuestros programas e iniciativas educativas y transformadoras.',
-    affectedText2: 'A los participantes se les proporciona un espacio seguro para recibir información y compartir sus perspectivas y experiencias. Las drogas, las pastillas falsas y los delincuentes no discriminan. Una sobredosis le puede pasar a cualquiera.',
-    affectedText3: 'Solo en 2023 perdimos 122,000 almas según el CDC, muchos de ellos jóvenes. La educación, concienciación, prevención y los programas integrales son clave.',
+    affectedLabel: 'Nuestra Realidad',
+    affectedTitle: 'El Fentanilo No Discrimina',
+    affectedText1: 'La crisis que enfrentamos hoy ignora códigos postales, calificaciones escolares y antecedentes familiares. Llega a las aulas y a los vecindarios tranquilos por igual, atacando a jóvenes que creen estar tomando una decisión inofensiva.',
+    affectedText2: 'Nuestros programas existen para llenar ese vacío. Cuando los sistemas de educación tradicionales no pueden cubrir el entrenamiento urgente y especializado requerido para identificar una amenaza de opioides sintéticos, la Fundación La Luz de Iman lo provee sin costo alguno.',
+    affectedText3: 'Solo en 2023, nuestra nación perdió a más de 122,000 almas, muchas de ellas adultos jóvenes con toda su vida por delante. Luchamos para asegurar que su hijo, su vecino y su comunidad estén equipados para sobrevivir y prosperar.',
   },
 };
 
@@ -99,16 +99,16 @@ export default function SavingLivesPage() {
 
       <section className="section bg-light">
         <div className="container">
-          <div className="text-center" style={{ marginBottom: '40px' }}>
+          <div className="text-center" style={{ marginBottom: '60px' }}>
             <h2 className="section-title">{txt.initiativesTitle}</h2>
             <div className="gold-divider center" />
           </div>
           <div className="grid-2">
             {txt.sections.map((sec, i) => (
-              <div key={i} className="card" style={{ padding: '32px' }}>
-                <div style={{ marginBottom: '20px' }}>{sec.icon}</div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>{sec.title}</h3>
-                <p style={{ color: 'var(--navy-600)', lineHeight: '1.7' }}>{sec.desc}</p>
+              <div key={i} className="card card-dark" style={{ padding: '40px' }}>
+                <div style={{ marginBottom: '24px' }}>{sec.icon}</div>
+                <h3 style={{ fontSize: '1.4rem', marginBottom: '16px', color: 'var(--white)' }}>{sec.title}</h3>
+                <p style={{ color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.8' }}>{sec.desc}</p>
               </div>
             ))}
           </div>
@@ -122,20 +122,23 @@ export default function SavingLivesPage() {
               <span className="section-label">{txt.affectedLabel}</span>
               <h2 className="section-title" style={{ color: '#fff' }}>{txt.affectedTitle}</h2>
               <div className="gold-divider" />
-              <p style={{ marginBottom: '20px', color: 'rgba(255,255,255,0.8)' }}>{txt.affectedText1}</p>
-              <p style={{ marginBottom: '20px', color: 'rgba(255,255,255,0.8)' }}>{txt.affectedText2}</p>
-              <p style={{ color: 'var(--gold)', fontWeight: 500 }}>{txt.affectedText3}</p>
+              <p style={{ marginBottom: '24px', color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', lineHeight: '1.8' }}>{txt.affectedText1}</p>
+              <p style={{ marginBottom: '24px', color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', lineHeight: '1.8' }}>{txt.affectedText2}</p>
+              <p style={{ color: 'var(--gold)', fontWeight: 600, fontSize: '1.1rem', lineHeight: '1.8' }}>{txt.affectedText3}</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{
-                background: 'var(--navy-900)',
-                padding: '40px',
+                background: 'rgba(20, 28, 46, 0.8)',
+                backdropFilter: 'blur(12px)',
+                padding: '48px',
                 borderRadius: '16px',
                 border: '1px solid rgba(255,255,255,0.1)'
               }}>
                 <Activity size={80} color="var(--gold)" style={{ marginBottom: '24px' }} />
-                <h3 style={{ color: '#fff', marginBottom: '16px' }}>122,000+</h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)' }}>Lives lost in 2023 to preventable overdoses according to the CDC.</p>
+                <h3 style={{ color: '#fff', marginBottom: '16px', fontSize: '3rem', fontFamily: 'Playfair Display' }}>122,000+</h3>
+                <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', lineHeight: '1.6' }}>
+                  {lang === 'en' ? 'Tragic losses in 2023 to preventable synthetic opioid overdoses nationwide.' : 'Pérdidas trágicas en 2023 por sobredosis de opioides sintéticos prevenibles en todo el país.'}
+                </p>
               </div>
             </div>
           </div>

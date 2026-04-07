@@ -19,9 +19,9 @@
   --gray-400: #9CA3AF;
   --gray-600: #6B7280;
   --gray-800: #1F2937;
-  --text-primary: #0A0E1A;
-  --text-secondary: #374151;
-  --text-muted: #6B7280;
+  --text-primary: #FFFFFF;
+  --text-secondary: #D1D5DB;
+  --text-muted: #9CA3AF;
 
   /* Gradients */
   --gradient-gold: linear-gradient(135deg, #C9A84C 0%, #E8C97A 50%, #C9A84C 100%);
@@ -249,7 +249,7 @@ p {
 
 .btn-primary {
   background: var(--gradient-gold);
-  color: var(--navy);
+  color: var(--white);
   box-shadow: var(--shadow-gold);
 }
 
@@ -278,7 +278,7 @@ p {
 
 .btn-outline:hover {
   background: var(--gold);
-  color: var(--navy);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
@@ -375,7 +375,7 @@ p {
 
 .lang-toggle button.active {
   background: var(--gold);
-  color: var(--navy);
+  color: var(--white);
 }
 
 /* =============================================
@@ -390,7 +390,7 @@ p {
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 8px;
-  color: var(--text-primary);
+  color: var(--white);
 }
 
 .form-group input,
@@ -402,7 +402,7 @@ p {
   border-radius: var(--radius-md);
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-  color: var(--text-primary);
+  color: var(--white);
   background: var(--white);
   transition: var(--transition);
   outline: none;

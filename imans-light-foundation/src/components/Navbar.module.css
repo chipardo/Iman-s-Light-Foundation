@@ -397,7 +397,7 @@
 
 .mobileLang button.activeLang {
   background: var(--gold);
-  color: var(--navy-900);
+  color: var(--white);
   border-color: var(--gold);
 }
 

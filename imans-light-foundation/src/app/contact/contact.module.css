@@ -27,7 +27,7 @@
   height: 64px;
   border-radius: 50%;
   background: var(--gradient-gold);
-  color: var(--navy);
+  color: var(--white);
   font-size: 1.8rem;
   font-weight: 700;
   display: flex;
@@ -38,7 +38,7 @@
 
 .successMsg h3 {
   font-size: 1.5rem;
-  color: var(--navy);
+  color: var(--white);
   margin-top: 8px;
 }
 
@@ -94,7 +94,7 @@
 .contactCardValue {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--white);
   text-decoration: none;
   transition: color 0.2s ease;
   word-break: break-all;

@@ -154,7 +154,7 @@
 .pillarTitle {
   font-size: 1.25rem;
   margin-bottom: 12px;
-  color: var(--navy);
+  color: var(--white);
 }
 
 /* ===== STORY ===== */
@@ -285,7 +285,7 @@
 
 .newsletterText h3 {
   font-size: 1.4rem;
-  color: var(--navy);
+  color: var(--white);
   margin-top: 8px;
 }
 
@@ -303,7 +303,7 @@
   border-radius: 50px;
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
-  color: var(--text-primary);
+  color: var(--white);
   outline: none;
   transition: all 0.2s ease;
 }
