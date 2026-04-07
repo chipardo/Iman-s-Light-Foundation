@@ -201,12 +201,12 @@ export default function ProgramsPage() {
                   <span style={{ display: 'flex', color: 'var(--gold)' }}><prog.icon size={44} /></span>
                   <span className="tag" style={{ border: '1px solid rgba(201,168,76,0.4)', background: 'transparent' }}>{prog.tag}</span>
                 </div>
-                <h2 className="section-title" style={{ color: i % 2 === 1 ? 'var(--navy)' : 'var(--white)', marginBottom: '12px' }}>{prog.title}</h2>
+                <h2 className="section-title" style={{ color: 'var(--white)', marginBottom: '12px' }}>{prog.title}</h2>
                 <p style={{ fontSize: '1.2rem', fontStyle: 'italic', color: 'var(--gold)', marginBottom: '20px', fontFamily: 'Playfair Display, serif', lineHeight: '1.5' }}>
                   "{prog.subtitle}"
                 </p>
                 <div className="gold-divider" style={{ marginBottom: '28px' }} />
-                <p style={{ marginBottom: '36px', color: i % 2 === 1 ? 'var(--navy-600)' : 'rgba(255,255,255,0.85)', fontSize: '1.05rem', lineHeight: '1.9' }}>
+                <p style={{ marginBottom: '36px', color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', lineHeight: '1.9' }}>
                   {prog.description}
                 </p>
               </div>

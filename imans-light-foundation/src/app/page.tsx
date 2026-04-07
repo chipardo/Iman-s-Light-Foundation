@@ -53,7 +53,7 @@ const t = {
     prog4Text: 'Connecting grieving families to resources, counseling, and community support networks.',
     learnMore: 'Learn More',
     eventsLabel: 'Events',
-    eventsTitle: 'Upcoming & Past Events',
+    eventsTitle: 'Upcoming Events',
     eventsSub: 'Join us at our community events where education meets action.',
     viewAllEvents: 'View All Events',
     ctaTitle: 'Be Part of the Solution',
@@ -110,7 +110,7 @@ const t = {
     prog4Text: 'Conectamos familias en duelo con recursos, asesoramiento y redes de apoyo comunitario.',
     learnMore: 'Saber Más',
     eventsLabel: 'Eventos',
-    eventsTitle: 'Eventos Próximos y Pasados',
+    eventsTitle: 'Próximos Eventos',
     eventsSub: 'Únase a nuestros eventos comunitarios donde la educación se convierte en acción.',
     viewAllEvents: 'Ver Todos los Eventos',
     ctaTitle: 'Sé Parte de la Solución',
@@ -321,8 +321,8 @@ export default function HomePage() {
           
           <div ref={addRef} className="fade-up" style={{ marginTop: '40px', background: 'var(--navy)', borderRadius: '16px', border: '2px solid rgba(201,168,76,0.6)', padding: '48px', textAlign: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.3)', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '6px', background: 'var(--gradient-gold)' }} />
-            <h3 style={{ color: 'var(--gold)', fontFamily: 'Playfair Display', fontSize: '2.5rem', marginBottom: '16px' }}>{lang === 'es' ? 'Segunda Gala Anual' : '2nd Annual Gala'}</h3>
-            <p style={{ color: 'var(--white)', fontSize: '1.4rem', marginBottom: '8px' }}>{lang === 'es' ? '25 de Octubre, 2025' : 'October 25th, 2025'}</p>
+            <h3 style={{ color: 'var(--gold)', fontFamily: 'Playfair Display', fontSize: '2.5rem', marginBottom: '16px' }}>{lang === 'es' ? 'Tercera Gala Anual' : '3rd Annual Gala'}</h3>
+            <p style={{ color: 'var(--white)', fontSize: '1.4rem', marginBottom: '8px' }}>{lang === 'es' ? 'Octubre 2026' : 'October 2026'}</p>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', marginBottom: '32px' }}>@ The Signature Grand</p>
             <Link href="/events" className="btn btn-primary">{txt.viewAllEvents} →</Link>
           </div>
