@@ -52,9 +52,9 @@ const t = {
     testimonialsTitle: 'Community Impact Testimonials',
     testimonialsSub: 'Real stories from the families, students, and partners we serve.',
     testimonials: [
-      { quote: "The foundation's workshop in our high school completely completely changed the narrative. The students were finally spoken to with respect and truth, rather than just fear.", author: "High School Counselor, Miami-Dade" },
-      { quote: "Receiving the Narcan kit and the emotional training from Dr. Barbosa made our family feel equipped. We no longer feel helpless against this crisis.", author: "Local Parent & Advocate" },
-      { quote: "Mari's strength is awe-inspiring. This foundation doesn't just talk about the problem—they are out here physically saving lives.", author: "Community Leader, S.A.R.A." },
+      { quote: "We honestly felt lost before finding Iman's Light. The emotional training and the Narcan kits gave us an overwhelming sense of relief and an actual plan to protect our kids. You feel Mari's genuine heart in every single presentation.", author: "A Grateful Local Parent & Advocate" },
+      { quote: "The interactive workshop they hosted at our school resonated deeply with the youth. They finally felt spoken to with deep respect, truth, and genuine care instead of standard fear tactics. It completely shifted the narrative in our classrooms.", author: "Miami-Dade High School Counselor" },
+      { quote: "This foundation doesn't just discuss the fentanyl crisis. They are physically out here carrying Narcan, holding space for grieving families, and saving actual lives every single day. Their strength and compassion are truly awe-inspiring.", author: "Community Leader with S.A.R.A." },
     ],
     partnersLabel: 'Our Extended Family',
     partnersTitle: 'Friends of the Foundation',
@@ -109,9 +109,9 @@ const t = {
     testimonialsTitle: 'Testimonios de Impacto',
     testimonialsSub: 'Historias reales de las familias, estudiantes y socios a los que servimos.',
     testimonials: [
-      { quote: "El taller de la fundación cambió completamente la narrativa en nuestra escuela secundaria.", author: "Consejero Escolar" },
-      { quote: "Recibir el entrenamiento emocional del Dr. Barbosa hizo que nuestra familia se sintiera equipada contra esta crisis.", author: "Padre Local" },
-      { quote: "La fuerza de Mari es impresionante. Físicamente están salvando vidas.", author: "Líder Comunitario, S.A.R.A." },
+      { quote: "Nos sentíamos honestamente perdidos antes de encontrar la Luz de Iman. El entrenamiento emocional y los kits de Narcan nos dieron un enorme sentido de alivio. Sientes el genuino corazón de Mari en cada presentación que hacen.", author: "Una Madre y Defensora Local Increíblemente Agradecida" },
+      { quote: "El taller interactivo que hicieron en nuestra escuela resonó profundamente con los jóvenes. Se sintieron escuchados con gran respeto, verdad y un cuidado real. Cambió completamente la conversación en nuestros pasillos.", author: "Consejero de Escuela Secundaria de Miami-Dade" },
+      { quote: "Esta fundación no solo habla de la crisis del fentanilo en teoría. Ellos están físicamente presentes impartiendo Narcan, llorando con las familias y salvando vidas reales todos los días. Su amor y dolor son nuestra mayor esperanza.", author: "Líder Comunitario en S.A.R.A." },
     ],
     partnersLabel: 'Nuestra Familia Extendida',
     partnersTitle: 'Amigos de la Fundación',
@@ -263,7 +263,7 @@ export default function AboutPage() {
                   "{test.quote}"
                 </p>
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '16px' }}>
-                  <span style={{ color: 'var(--gold)', fontWeight: 600, fontFamily: 'Playfair Display, serif' }}>- {test.author}</span>
+                  <span style={{ color: 'var(--gold)', fontWeight: 600, fontFamily: 'Playfair Display, serif' }}>{test.author}</span>
                 </div>
               </div>
             ))}
@@ -277,10 +277,42 @@ export default function AboutPage() {
           <h2 className="section-title" style={{ color: 'var(--white)' }}>{txt.partnersTitle}</h2>
           <div className="gold-divider center" />
           <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.8)' }}>{txt.partnersSub}</p>
-          <div className={styles.partnerLogos} style={{ marginTop: '40px', justifyContent: 'center', display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
-            {['Florida Dept of Children & Families', 'ISAVEFL', 'DEA, One Pill Can Kill', 'Local School Boards'].map((p, i) => (
-              <div key={i} className={styles.partnerLogo} style={{ border: '1px solid rgba(255,255,255,0.2)', padding: '16px 24px', borderRadius: '8px', color: 'var(--white)', fontWeight: 600 }}>{p}</div>
-            ))}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '48px', marginTop: '48px', alignItems: 'center' }}>
+            <div style={{ width: '100%' }}>
+              <div className={styles.sponsorLogosGrid}>
+                <div className={styles.sponsorBadge}>
+                  <Image src="https://static.wixstatic.com/media/56e6ee_b2c36136ad654d72a7f4de09ea17cf05~mv2.png/v1/fill/w_568,h_191,q_90,enc_avif,quality_auto/56e6ee_b2c36136ad654d72a7f4de09ea17cf05~mv2.png" alt="FGA" width={284} height={95} style={{ objectFit: 'contain' }} />
+                </div>
+                <div className={styles.sponsorBadge}>
+                  <Image src="https://static.wixstatic.com/media/56e6ee_b9e7061a12d24743b5b3fc07a74f92ed~mv2.png/v1/fill/w_201,h_194,q_90,enc_avif,quality_auto/56e6ee_b9e7061a12d24743b5b3fc07a74f92ed~mv2.png" alt="The Bridge" width={100} height={97} style={{ objectFit: 'contain' }} />
+                </div>
+                <div className={styles.sponsorBadge}>
+                  <Image src="https://static.wixstatic.com/media/56e6ee_b29a7ddaabd3481bb888135a8da07410~mv2.png/v1/fill/w_357,h_194,q_90,enc_avif,quality_auto/56e6ee_b29a7ddaabd3481bb888135a8da07410~mv2.png" alt="Survivors Pathway" width={178} height={97} style={{ objectFit: 'contain' }} />
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '48px', justifyContent: 'center', width: '100%' }}>
+              <div className={styles.sponsorLogosGrid}>
+                <div className={styles.sponsorBadge}>
+                  <Image src="https://static.wixstatic.com/media/56e6ee_f010f8e8cccb405a8fc28f3fb2481f7e~mv2.png/v1/fill/w_233,h_183,q_90,enc_avif,quality_auto/56e6ee_f010f8e8cccb405a8fc28f3fb2481f7e~mv2.png" alt="Nicklaus Childrens" width={116} height={91} style={{ objectFit: 'contain' }} />
+                </div>
+                <div className={styles.sponsorBadge}>
+                  <Image src="https://static.wixstatic.com/media/56e6ee_55f0bbe459fb41e9907cd3c547b6afb5~mv2.png/v1/fill/w_371,h_268,q_90,enc_avif,quality_auto/56e6ee_55f0bbe459fb41e9907cd3c547b6afb5~mv2.png" alt="One More Child" width={135} height={97} style={{ objectFit: 'contain' }} />
+                </div>
+                <div className={styles.sponsorBadge}>
+                  <Image src="https://static.wixstatic.com/media/56e6ee_0b1d1f617c3b42acbf68755c62e11afe~mv2.png/v1/fill/w_224,h_225,q_90,enc_avif,quality_auto/56e6ee_0b1d1f617c3b42acbf68755c62e11afe~mv2.png" alt="Village South" width={97} height={97} style={{ objectFit: 'contain' }} />
+                </div>
+              </div>
+            </div>
+            
+            {/* Extended text partners from Wix data */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center', marginTop: '24px' }}>
+              {['Secure Your Drink', 'Outreach Behavior Support', 'Infinity Life Wellness Center', 'Behavior Support Center', 'Improving Lives Community Mental Health', 'Luxe Properties', 'DAER Nightclub'].map((p, i) => (
+                <div key={i} className={styles.partnerLogo} style={{ border: '1px solid rgba(255,255,255,0.2)', padding: '16px 24px', borderRadius: '8px', color: 'var(--white)', fontWeight: 600 }}>{p}</div>
+              ))}
+            </div>
+
           </div>
           <Link href="/contact" className="btn btn-outline" style={{ marginTop: '40px' }}>
             {txt.partnerCta} →

@@ -194,3 +194,34 @@
   flex-grow: 1;
 }
 
+
+.sponsorLogosGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsorBadge {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.sponsorBadge:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .sponsorBadge {
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

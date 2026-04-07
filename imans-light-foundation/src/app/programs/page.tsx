@@ -22,7 +22,7 @@ const programs = {
       tag: 'Emotional Resilience',
       title: 'Mental Wellness Workshops',
       subtitle: 'Understanding emotions to prevent self-harm.',
-      description: 'Addiction often stems from emotional pain. Our Mental Wellness Workshop—"Understanding Emotions and Critical Thinking"—provides deep skills in emotional intelligence and cognitive restructuring. By teaching nonviolent communication and positive self-talk, we help youth manage the stress, anger, anxiety, and grief that often lead to self-medication and violence.',
+      description: 'Addiction often stems from emotional pain. Our Mental Wellness Workshop "Understanding Emotions and Critical Thinking"—provides deep skills in emotional intelligence and cognitive restructuring. By teaching nonviolent communication and positive self-talk, we help youth manage the stress, anger, anxiety, and grief that often lead to self-medication and violence.',
       cta: 'Request a Session',
     },
     {
@@ -40,7 +40,7 @@ const programs = {
       tag: 'Community Events',
       title: 'Music and Lights for Life',
       subtitle: 'Celebrating life safely, without substances.',
-      description: 'Our annual "Music and Lights for Life Dance and Exhibition" provides a safe environment to dance, laugh, and have fun—proving there is absolutely no need for substances that alter your mental state. We deliver crucial information on drug lacing, mental wellness, and the reality of fake pills. With Narcan distributed on-site and sponsors offering CPR lessons, we honor lives lost while actively protecting the living.',
+      description: 'Our annual "Music and Lights for Life Dance and Exhibition" provides a safe environment to dance, laugh, and have fun, proving there is absolutely no need for substances that alter your mental state. We deliver crucial information on drug lacing, mental wellness, and the reality of fake pills. With Narcan distributed on-site and sponsors offering CPR lessons, we honor lives lost while actively protecting the living.',
       cta: 'Attend the Event',
     },
   ],
